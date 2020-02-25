@@ -28,6 +28,8 @@ Laptops necessary for use in class.
 
 Damian Pavlyshyn
 
+[rmarkdown test](/rmd/test-woven/)
+
 # Schedule
 
 Class meets during weeks two to five (_not_ week 1), from April 6 to April 30.

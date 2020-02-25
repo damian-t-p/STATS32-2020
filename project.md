@@ -25,7 +25,7 @@ In implementing your final project, you should try to stick as closely to your p
 If you are unable to do so, please provide a paragraph in your final project to explain the deviations from the proposal.
 
 # Grading & Deadlines
-Both the project proposal and final project should be submitted through Canvas.
+Both the project proposal and final project should be submitted through Gradescope.
 
 The project proposal is due by Apr 24 (Fri), 23:59:59 and is worth 20%.
 
