@@ -20,7 +20,6 @@ The goal of the short course is to familiarize students with R's tools for data 
 Lectures will be interactive with a focus on learning by example, and assignments will be application-driven.
 No prior programming experience is needed.
 Topics covered include basic data structures, File I/O, data transformation and visualization, simple statistical tests, etc, and some useful packages in R.
-
 Prerequisite: undergraduate student.
 Priority given to non-engineering students.
 Laptops necessary for use in class.
