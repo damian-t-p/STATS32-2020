@@ -39,6 +39,16 @@ Office hours will be held during weeks one to six, from TBA to TBA.
 
 # Assignments
 
+## Final project & proposal (graded)
+The only graded assignments for this class are the final project (80%) and the project proposal (20%).
+Click here for more details on these assignments.
+
+## Programming questions (not graded)
+Programming is one of those things that you can't learn just by listening to lectures: you have to practice (and practice and practice)!
+However, since this is a 1 credit class, I don't want to have graded assignments on top of the project.
+To that end, after each session I will release a few questions to test your understanding of that session's material, and will release the answers a few days later.
+Responses to these questions will _NOT_ be graded.
+
 # Course materials
 
 There is no textbook for this class. Having said that, much of the material for this class was heavily inspired by "R for Data Science" by Garrett Grolemund and Hadley Wickham which is available online for free [here](https://r4ds.had.co.nz/). It is very comprehensive and well-written, and I recommend it highly to anyone who wants to do data science in R!
