@@ -8,7 +8,8 @@ where appropriate -->
 
 @@colbox-blue
 # Announcements
-* No lectures week 1 (March 31, April 2)
+* Stanford has already announced many major changes to instruction, and this uncertainty is likely to continue. Please regularly monitor the [course changes](/distance/) page for up-to-date information about this course.
+* No lectures week 1 (April 7, April 9)
 * Make sure to [install R](/install-R/) _before_ coming to class. If you are having trouble, I will be holding office hours on TBA.
 @@
 
@@ -27,16 +28,16 @@ Laptops necessary for use in class.
 
 # Instructor
 
-Damian Pavlyshyn
+Damian Pavlyshyn ([damianp@stanford.edu](mailto:damianp@stanford.edu))
 
 # Schedule
 
-Class meets during weeks two to five (_not_ week 1), from April 6 to April 30.
+Class meets during weeks two to five (_not_ week 1), from April 13 to May 7.
 
 Office hours will be held during weeks one to six, from TBA to TBA.
 
-* **Lecture:** Tuesdays and Thursdays 12:00 - 1:20 in [380-380Y](https://campus-map.stanford.edu/?srch=380-380Y).
-* **Office hours:** TBA
+* **Lecture:** Tuesdays and Thursdays 12:00 - 1:20 by Zoom (link to be added).
+* **Office hours:** Wednesdays 9:00 - 11:00 by Zoom (link to be added).
 
 # Assignments
 
