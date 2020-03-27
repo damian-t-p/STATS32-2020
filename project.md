@@ -1,6 +1,6 @@
 @def title = "Final project details"
 
-# Final Project (80%)
+# Final Project (80%, due May 16)
 To demonstrate your understanding of the material we have covered, you will perform a data analysis project in R.
 Each person should submit their own project.
 While you may discuss ideas and troubleshoot code with each other, each person must submit a unique project.
@@ -14,7 +14,7 @@ Here are the project minimum requirements:
 * At least 3 data visualizations (not all of the same type).
 * A "Conclusion" section to summarize the results of the analysis, as well as any deviations from the project proposal.
 
-# Project Proposal (20%)
+# Project Proposal (20%, due May 1)
 For the project proposal, submit a 1-2 paragraph description of your final project.
 You should provide details on the problem you wish to explore, any datasets that you will use, and potential visualizations.
 The proposal is a way for me to make sure that you have enough structure and data to complete the project.

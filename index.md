@@ -32,12 +32,12 @@ Damian Pavlyshyn ([damianp@stanford.edu](mailto:damianp@stanford.edu))
 
 # Schedule
 
-Class meets during weeks two to five (_not_ week 1), from April 13 to May 7.
+Class meets during weeks two to five (_not_ week 1), from April 14 to May 7.
 
-Office hours will be held during weeks one to six, from TBA to TBA.
+Office hours will be held during weeks one to six, from April 8 to May 13.
 
-* **Lecture:** Tuesdays and Thursdays 12:00 - 1:20 by Zoom (link to be added).
-* **Office hours:** Wednesdays 9:00 - 11:00 by Zoom (link to be added).
+* **Lecture:** Tuesdays and Thursdays 12:00 - 1:20 by Zoom (link available through Canvas).
+* **Office hours:** Wednesdays 9:00 - 11:00 by Zoom (link available through Canvas).
 
 # Assignments
 
