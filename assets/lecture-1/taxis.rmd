@@ -1,0 +1,299 @@
+---
+title: "Visualisation of Uber and Green Taxi NYC trip data"
+output:
+  html_document:
+    df_print: paged
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+knitr::opts_knit$set(root.dir = './ny-taxi-data')
+```
+
+# Preface
+
+This document showcases many of the techniques that we will study in STATS 32.
+Don't expect to understand much of this at the beginning of the course - it's purpose is to give you an idea of what you'll be able to do by the end and an example of a data-analytic workflow and good RMarkdown practices.
+
+I encourage you to re-read this document periodically and attempt some of its exercises as the course goes on.
+It will gradually become demystified, and will likely be a useful reference for some basic plotting syntax.
+
+# Set-up
+
+First, we set up the environment.
+We'll be using the `tidyverse` and `lubridate` packages, which are loaded in using the `library()` command.
+If you haven't installed them yet, run `install.packages(tidyverse)` and similarly for `lubridate` before loading.
+```{r}
+library(tidyverse)
+library(lubridate)
+```
+
+Now, we can load the csvs into memory.
+Make sure that they're in the same directory as the RMarkdown file, or R won't find them!
+
+We're using the tidyverse function `read_csv`, but be aware that there is a base R function `read.csv`, which is somewhat slower and doesn't take advantage of the tidyverse's efficient data tables.
+```{r}
+weather <- read_csv( "weather.csv")
+rides <- read_csv("rides.csv")
+```
+
+# Investigating the weather table
+
+Let's have a look at our weather data using the `head()` function, which shows the first few rows of the table:
+```{r}
+head(weather)
+```
+As a first exercise, why don't we have a look at how the average temperature fluctuates over the course of our dataset.
+To do this, we'll make a scatterplot of the column `avg_temp` against `date`.
+
+The function `ggplot` makes this easy - it takes as arguments the table that we're plotting, and a specification of aesthetics.
+For a scatter plot we're plotting points in an x-y plane, so we only need to specify that `date` should be plotted on the x-axis and `avg_temp` on the y-axis.
+
+To make it a scatter plot, we specify that we want to plot a bunch of points using the `geom_point` function.
+The addition syntax for this looks pretty unusual, but think of it as adding layers of graphics to the plot.
+Later on, we'll see how this syntax makes stacking many different layers (such as legends, titles, lines-of-best-fit etc.) onto the same plot easy!
+```{r}
+ggplot(weather, aes(x = date, y = avg_temp)) + 
+  geom_point()
+```
+
+That looks about right - we can see a strong seasonality effect stretching across two years.
+Why don't we investigate this by plotting the temperature against the month.
+
+If we're going to use months as the x-axis, we need a column in our dataset indicating the month of each observation.
+We don't have one on hand, but we can extract this information from the `date` columns, using the `month()` function from the package `lubridate`.
+
+We can access individual columns from `weather` using the `$` operator:
+```{r}
+head(weather$date)
+```
+
+We see that, `weather$date` is a vector of dates, as we might expect.
+To get the month of each entry, we simply apply the `month()` function to the whole column, from which we get a vector of months:
+```{r}
+head(month(weather$date, label=TRUE))
+```
+
+The second row indicates an ordering and shows that `month()` is smart enough to order the months chronologically instead of alphabetically, which saves us a lot of trouble when plotting months on the x-axis.
+
+Now that we have created a vector of months, we need to add it back to our table.
+Just as we accessed the column `weather$date` using the `$` operator, we use the same operator to create a new column.
+R uses the unusual assignment operator `<-` instead of `=` - in fact,`=` still works, but in R is customarily only used when specifying options, instead of creating new variables or columns.
+```{r}
+weather$month <- month(weather$date, label=TRUE)
+
+head(weather)
+```
+
+(Note that `tidyverse` has a nicer way of creating new columns, which we'll cover later, but it's important to see this more fundamental version.)
+
+Our `weather` table now has the `months` column that we wanted to plot!
+So let's use it as before:
+```{r}
+ggplot(weather, aes(x = month, y = avg_temp)) + 
+  geom_point()
+```
+
+OK, that looks alright - we can see the seasonality very clearly now and the months are ordered correctly, but we can't see much in those dense clusters of points, so this isn't suuuuper useful.
+Why don't we replace them with boxplots:
+```{r}
+ggplot(weather, aes(x = month, y = avg_temp)) + 
+  geom_boxplot()
+```
+
+How easy was that!
+
+What if we want to do compare these boxplots between 2014 and 2015?
+Well, we already know how to make a column containing the year of each observation:
+```{r}
+weather$year <- as.factor(year(weather$date))
+```
+
+OK, so there's actually a little technical difficulty here.
+The `year()` function will find the year of a particular date and return it as a number, which is by default a continuous variable.
+In order to group our data by year, we need to specify that the year should instead be a *categorical* variable, meaning that we're not interested in year values of 2014.2 or something.
+This is what the `as.factor()` function is doing.
+
+Once we have defined our `year` column, plotting the data split by year is as simple as passing the `year` column to the `ggplot` aesthetic argument.
+In particular, we specify that we want the year to determine the fill colour of the boxplots.
+```{r}
+ggplot(weather, aes(x = month, y = avg_temp, fill = year)) + 
+  geom_boxplot()
+```
+
+There's now a lot of information in a pretty concise space!
+For example, we can see that 2015 was warmer than 2014 throughout almost the whole year, and also that that year saw a larger fluctuation of temperatures.
+
+The take-away from this section is that once your data are set up neatly and correctly in a table, `tidyverse` makes it very quick to plot and manipulate things.
+
+We also saw how to start with a fairly rough picture, and then zoom into the interesting features of out datasets by successively refining our plots and transforming your data.
+
+## Exercises
+1. Perform a similar analysis based on precipitation. Think about how to represent the many days with no rain.
+1. Fit a smooth to the weather data
+1. Plot the difference in temperature between corresponding dates of 2015 and 2014. What do you notice?
+1. Investigate the monthly variability in temperatures and rainfall and comment about how these quantities relate to each other.
+
+# The rides dataset
+
+Let's look at the rides dataset in a similar way:
+```{r}
+head(rides)
+```
+
+There's a lot of information in this table, and we can get a lot out of it!
+In this section, I'll limit myself to the straightforward problem of how the number of rides in each service changes over the course of a week.
+
+As should be familiar by now, we create a new column of weekdays:
+```{r}
+rides$weekday <- wday(rides$date, label=TRUE)
+```
+
+(By the way, I definitely don't remember all of these functions like `wday` and neither should you. Reading the `lubridate` documentation or  just Googling "R get day of the week" is what I do 90% of the time when I'm performing analyses like this.)
+
+Now that we have everything we need in our table, what we want is a bar chart with days of the week along the x-axis and the number of trips in that weekday along the y-axis.
+We also have information about which trip happens through which service, so let's colour-code according to that information; why not, after all it's not even one more line of code!
+
+The `stat="count"` argument in `geom_bar()` indicates that we're not plotting any variable that appears as a columns along the y-axis, and instead just want to see the number of observations.
+```{r}
+ggplot(rides, aes(x = weekday, fill = service)) + 
+  geom_bar(stat = "count")
+```
+
+Interesting!
+We see a definite day-of the week effect with cab trips increasing as people get more and more sick of their working week.
+The plot also shows how much Uber dominates the Green Cabs.
+
+We also have access to a lot of customisation for these plots.
+Maybe we want a side-by-side bar plot instead of a stacked one - all we need to do is specify the positioning of the bars (in this case `dodge2` instead of `stack`), and  we have what we want:
+```{r}
+ggplot(rides, aes(x = weekday, fill = service)) + 
+  geom_bar(stat = "count", position = "dodge2")
+```
+
+## Exercises
+1. Investigate how Uber's dominance over Green taxis changes from 2014 to 2015
+1. There are many missing values in the `rides` table. Why do you think this is and what would you do about it?
+1. Analyse the effect of the time of day on the number of rides. What problems do you run into?
+1. Formulate an interesting question about the columns `trip_distance` and/or `passenger_count` and investigate it.
+
+# Combining the two tables
+
+Now that we've looked at our datasets individually, we can put them together and answer all new questions!
+
+In particular, we can add the information about the day to the rides table.
+For any particular ride, we can look up its date, and add the information about the weather that day to the end of the table.
+
+This is accomplished with the `left_join()` function.
+To see it's effect, scroll to the very right of the following output:
+```{r}
+rides <- left_join(rides, weather, by="date")
+
+head(rides)
+```
+
+This is now quite a rich dataset, and we can use it to answer many questions.
+For example, it stands to reason that when the weather gets colder, people walk and ride their bikes less, so maybe the number of trips is higher on cold days than it is on hot days.
+Let's see if the data support this hypothesis!
+
+If we want to plot number of rides a day against the daily temperature, we need to make table whose columns are the date, the total number of rides on that date and the daily temperature.
+
+To construct such a table, we use the "split-apply-combine" paradigm of data analysis.
+In particular, we split our full table of rides into smaller tables according to the date using the `group_by()` function.
+For example, one sub-table might be "Rides on 2015-03-15", and it will contain all the rides on that date. 
+
+Next, for each table, we count the number of rows (since there is a row for each trip) and the average temperature (the temperature will in fact be the same within each table, but the software doesn't know that).
+This is accomplished with the `summarize()` function.
+
+Once we have done this, and for each sub-table we have a summary of the ride count and the average temperature, we combine our results back into a single table, where each row is made up of a single table.
+
+I won't go into full detail on the syntax right now, but know that it looks like this:
+```{r}
+rides_summary <- rides %>%
+  group_by(date) %>%
+  summarize(
+    ntrips = n(),
+    temp = mean(avg_temp)
+  )
+```
+
+Notice the unusual `%>%` operator, which is knows as the "pipe".
+You should think of this as passing the output of a procedure on to be the input of the next procedure.
+In this case, `rides` begins as the input, is handed on to `group_by()`, which produces the sub-tables and then hands them on to `summarize`, which computes the number of trips and temperature of each sub-table.
+
+We finally store the result in a table called `rides_summary`.
+Let's have a look:
+```{r}
+head(rides_summary)
+```
+
+Exactly what we want!
+Now we can make a scatter plot of `ntrips` against `temp` using what we have learned:
+```{r}
+ggplot(rides_summary, aes(x = temp, y = ntrips)) + 
+  geom_point()
+```
+
+What a mess - that cluster of points on the bottom looks pretty unconvincing!
+One possible reason for this is that Uber has been expanding, so we would expect there to be more trips in 2015 than 2014.
+Perhaps the two clusters that we see are caused by the two years.
+
+Let's check by colour-coding the years
+```{r}
+rides_summary$year <- as.factor(year(rides_summary$date))
+
+ggplot(rides_summary, aes(x = temp, y = ntrips, color = year)) + 
+  geom_point()
+```
+
+Yep!
+That seems to separate our clusters very well.
+It also seems that within each year, the number of trips *increases* with the temperature - that's surprising!
+Let's plot some lines of bet fit to be sure
+
+We plot interpolations using the `stat_smooth()` function, which provides many ways to interpolate data.
+In our line-of-best-fit case, we will use `"lm"` for linear model.
+```{r}
+ggplot(rides_summary, aes(x = temp, y = ntrips, color = year)) + 
+  geom_point() + 
+  stat_smooth(method = "lm")
+```
+
+So in both years, the number of trips indeed increases with the temperature, so our original hypothesis was wrong!
+This is often the case, and is great!
+Now we can think about what else could cause this positive correlation, and what kind of data we could gather to test our new hypothesis.
+
+## Exercises
+
+1. Identify some logical or statistical weaknesses in the conclusion of this section. How might you address them?
+1. Perform the above analysis separately for Uber and Green taxis.
+1. Make a plot showing how the daily number of Uber and Green taxi rides changed over the course of the dataset.
+1. What interesting summaries other than counts can you think of? Perform the corresponding analysis.
+
+# Just for fun: what `ggplot` can do
+
+We'll finish with a more (but not overly) complex demonstration of R's plotting capabilities by showing the pickup locations of every ride on a map of New York.
+
+I'm not going to explain this one in detail yet, but I encourage you to look over the code.
+If you've followed the document this far, you should be able to understand what's going on in most of it!
+```{r}
+library(ggmap)
+
+# extract 10% of the data at random so the dots don't overwhelm the map
+subrides <- sample_frac(rides, 0.1)
+
+# load a map of New York from Google maps based on latitude and longitude
+ny.map <- get_map(
+  c(left = -74.1, right = -73.7, bottom = 40.6, top = 40.9),
+  color = "bw"
+)
+    
+ggmap(ny.map) + 
+  geom_point(
+    data = subrides,
+    aes(x = pickup_longitude, y = pickup_latitude, color = service),
+    size = 0.15)
+```
+
+Indeed, Green taxis do not operate in lower Manhattan, where Uber has a virtual monopoly!
+In contrast, Brooklyn has both services operating in the same areas.
+If you look this up, you'll find the historical and legislative reason for this, but it's another example of an interesting fact revealed from our data table through a bit of clever investigation
