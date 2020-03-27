@@ -87,4 +87,4 @@ In the console, run the following commands by typing them into the console and h
 
 If all of the commands produced the expected results, you are ready for the first lecture!
 
-If you were unable to get something working, please see me in office hours - **I will not answer questions about software installation during lectures!**
+If you were unable to get something working, please attend office hours - **I will not answer questions about software installation during lectures!**
