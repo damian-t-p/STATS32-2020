@@ -80,10 +80,10 @@ Once you have completed the above instructions, check that you have done everyth
 Open RStudio.
 In the console, run the following commands by typing them into the console and hitting enter:
 1. `1 + 1`. You should see the output `[1] 2`. If nothing happens or you are unable to type anything, redo the "Installing R" section of this guide.
-1. `R.version.string`. You should see the output `[1] "R version 3.6.3 (2020-02-26)"`. If you see a different version, refer to the "Updating R" section of this guide.
+1. `R.version.string`. You should see the output `[1] "R version 3.6.3 (2020-02-29)"`. If you see a different version, refer to the "Updating R" section of this guide.
 1. `library(tidyverse)`. You should see several lines of output in different colors. If you see the output `Error in library(tidyverse) : there is no package called 'tidyverse'`, refer to the "Installing tidyverse" section of this guide.
 1. `packageVersion(tidyverse)`. You should see the output `[1] '1.3.0'`. If you see anything else, refer to the "Updating tidyverse" section of this guide.
-1. `qplot(-5:5, (-5:5)^2, geom="line")`. You should see a parabola plotted in the bottom-left corner.
+1. `qplot(-5:5, (-5:5)^2, geom="line")`. You should see a parabola plotted in the bottom-right corner.
 
 If all of the commands produced the expected results, you are ready for the first lecture!
 
