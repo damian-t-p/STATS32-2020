@@ -10,7 +10,7 @@ where appropriate -->
 # Announcements
 * Stanford has already announced many major changes to instruction, and this uncertainty is likely to continue. Please regularly monitor the [course changes](/distance/) page for up-to-date information about this course.
 * No lectures week 1 (April 7, April 9)
-* Make sure to [install R](/install-R/) _before_ coming to class. If you are having trouble, I will be holding office hours on TBA.
+* Make sure to [install R](/install-R/) _before_ coming to class. If you are having trouble, I will be holding office hours on April 8 that will focus on installation and set-up.
 @@
 
 # Course description

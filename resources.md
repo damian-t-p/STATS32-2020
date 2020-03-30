@@ -15,6 +15,7 @@ If you find something cool and/or helpful, email it to and I might add it to thi
 * [Awesome Public Datasets:](https://github.com/caesar0301/awesome-public-datasets) A compilation of links to various open datasets
 * [Google Dataset Search:](https://toolbox.google.com/datasetsearch) A tool for searching for open datasets
 * [Data Is Plural:](https://tinyletter.com/data-is-plural) A weekly newsletter of interesting datasets.
+* [New York Times US Covid-19 data:](https://github.com/nytimes/covid-19-data) Live updating dataset containing state-by-state and county-by-county infection data.
 	
 **Fun R stuff**
 * [R shiny dashboard](https://sjfmarks.shinyapps.io/nba_shiny_dash/) for correlations between various stats for NBA 2017-18 season
