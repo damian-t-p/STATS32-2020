@@ -13,8 +13,14 @@
 **Materials**
 
 * [Lecture slides](/assets/lecture-1/presentation1.html)
+* Lab: [Using R for calculation](/assets/lecture-1/lab1.html)
+* Exercises: [problems](/assets/lecture-1/practice1.html)<!--, [solutions](/assets/lecture-1/solutions1.html)-->
+
+**Extras**
+
 * Showcase document: [published](/assets/lecture-1/taxis.html) and [RMarkdown source](/assets/lecture-1/taxis.rmd)
 * Data tables: [`weather.csv`](/assets/lecture-1/ny-taxi-data/weather.csv), [`rides.csv`](/assets/lecture-1/ny-taxi-data/rides.csv)
+
 
 # April 16, *R objects, variable types and data tables*
 
