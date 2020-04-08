@@ -29,6 +29,20 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 16, *R objects, variable types and data tables*
 
+**Before class**
+
+* *Suggested reading:* [Summary statistics](/assets/lecture-2/Summary Statistics.pdf)
+
+**Materials**
+
+* [Lecture slides](/assets/lecture-2/pres2.html)
+* Lab: [Basic R objects](/assets/lecture-2/lab2.html)
+<!-- * Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html)-->
+
+**Extras**
+
+* [RStudio shortcut reference](/assets/lecture-2/Valuable RStudio Shortcuts.pdf)
+
 # April 21, *Data visualisation with `ggplot`*
 
 # April 23, *`dplyr` part 1: data manipulation and functions*
