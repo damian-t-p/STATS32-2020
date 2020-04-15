@@ -37,11 +37,12 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 * Lecture: [slides](/assets/lecture-2/pres2.html)
 * Lab: [Basic R objects](/assets/lecture-2/lab2.html)
-<!-- * Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html)-->
+* Exercises: [problems](/assets/lecture-2/practice2.html)<!--, [solutions](/assets/lecture-2/solutions2.html)-->
 
 **Extras**
 
 * [RStudio shortcut reference](/assets/lecture-2/Valuable RStudio Shortcuts.pdf)
+* Data table: [`2016-presidential-election-county-results.csv`](/assets/lecture-2/2016-presidential-election-county-results.csv)
 
 # April 21, *Data visualisation with `ggplot`*
 
