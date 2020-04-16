@@ -35,9 +35,9 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-2/pres2.html)
+* Lecture: [slides](/assets/lecture-2/pres2.html)  and [recording](/assets/lecture-2/recording2.mp4)
 * Lab: [Basic R objects](/assets/lecture-2/lab2.html)
-* Exercises: [problems](/assets/lecture-2/practice2.html)<!--, [solutions](/assets/lecture-2/solutions2.html)-->
+* Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html)
 
 **Extras**
 
