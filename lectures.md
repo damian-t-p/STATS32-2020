@@ -46,6 +46,23 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 21, *Data visualisation with `ggplot`*
 
+**Before class**
+
+* *Required reading:* [R for Data Science, chapter 3: Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)
+
+**Materials**
+
+* Lecture: [slides](/assets/lecture-3/pres3.html)
+* Lab: [Data visualization](/assets/lecture-2/lab3.html)
+
+**Extras**
+
+* [ggplot reference sheet](/assets/lecture-2/ggplot2-cheatsheet.pdf)
+* Data tables: [`worldbank_data_tidy.csv`](/assets/lecture-3/data/worldbank_data_tidy.csv)
+    + Data sourced directly from world bank website: [`worldbank_data_raw.csv`](/assets/lecture-3/data/worldbank_data_raw.csv)
+    + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R)
+    + Information about the raw data table:  [`worldbank_metadata.csv`](/assets/lecture-3/data/worldbank_metadata.csv)
+
 # April 23, *`dplyr` part 1: data manipulation and functions*
 
 # April 28, *`dplyr` part 2: data munging, importing and plotting*
