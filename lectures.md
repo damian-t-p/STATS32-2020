@@ -54,10 +54,11 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 * Lecture: [slides](/assets/lecture-3/pres3.html)
 * Lab: [Data visualization](/assets/lecture-2/lab3.html)
+* Exercises: [problems](/assets/lecture-3/practice3.html), [solutions](/assets/lecture-3/solutions3.html)
 
 **Extras**
 
-* [ggplot reference sheet](/assets/lecture-2/ggplot2-cheatsheet.pdf)
+* [ggplot reference sheet](/assets/lecture-3/ggplot2-cheatsheet.pdf)
 * Data tables: [`worldbank_data_tidy.csv`](/assets/lecture-3/data/worldbank_data_tidy.csv)
     + Data sourced directly from world bank website: [`worldbank_data_raw.csv`](/assets/lecture-3/data/worldbank_data_raw.csv)
     + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R)
