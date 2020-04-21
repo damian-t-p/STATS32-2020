@@ -59,6 +59,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 **Extras**
 
 * [ggplot reference sheet](/assets/lecture-3/ggplot2-cheatsheet.pdf)
+* [Code for generating `efficiency`](/assets/lecture-3/efficiency.html)
 * Data tables: [`worldbank_data_tidy.csv`](/assets/lecture-3/data/worldbank_data_tidy.csv)
     + Data sourced directly from world bank website: [`worldbank_data_raw.csv`](/assets/lecture-3/data/worldbank_data_raw.csv)
     + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R)
