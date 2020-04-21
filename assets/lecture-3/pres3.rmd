@@ -1,0 +1,569 @@
+---
+title: "STATS 32 Session 3: Data Visualization with `ggplot`"
+author: "Damian Pavlyshyn"
+date: "April 21<br><br><http://web.stanford.edu/class/stats32/lectures/>"
+output: 
+    slidy_presentation:
+        css: ../style.css
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE)
+library(knitr)
+```
+
+# Final project
+
+**Goal: Demonstrate that you know how to do data analysis in R**
+
+Can be done individually or in a pair.
+
+Minimum requirements:
+
+- 1 R Markdown file and 1 HTML file
+- Use a dataset that we have not used in class
+- "Introduction", "Data analysis" and "Conclusion" sections
+- At least 3 data visualizations, each of a different type (6 data visualizations with at least 3 different types if working with a teammate)
+- Examples on the class website
+- Due **May 16 (Sat), 23:59:59**
+
+# Project proposal
+
+- 1-2 paragraphs long
+- Details on the problem you wish to explore, datasets you will use, potential visualizations
+- Due **May 1 (Fri), 23:59:59**
+
+# Recap of session 2: Data tables
+
+A standard-form data table is a matrix of values where
+
+* each row is the record of a single observation and
+* each column represents a single variable being measured.
+
+In this lecture we will see how to use a data table to gain insight about the variables (corresponding to columns) and how they relate with each other.
+
+This is essentially a definition of data presentation.
+
+# Data presentation
+
+```{r echo=FALSE}
+library(tidyverse)
+efficiency <- mtcars %>%
+    as_tibble %>%
+    transmute(
+        mpg = mpg,
+        cylinders = factor(cyl, ordered = is.ordered(c(4, 6, 8))),
+        weight = wt * 1000,
+        horsepower = hp,
+        engine = factor(vs, levels = c(0,1), labels = c("V-shaped", "straight")),
+        transmission = factor(am, levels = c(0,1), labels = c("automatic", "manual")),
+        gears = factor(gear)
+    )
+```
+
+
+We start with a big and unwieldy table of numbers.
+How do we extract useful information about it?
+
+## Numerical summaries
+
+Try this out on some vectors and dataframes
+
+* Column metadata: `str`, `summary`
+* Typical entries: `head`, `tail`
+* Table structure: `names`, `dim`, `nrow`, `ncol`
+* Summary statistics: `mean`, `median`, `sd`, `var`
+
+```{r}
+summary(efficiency)
+head(efficiency)
+sd(efficiency$weight)
+```
+
+# Plots and visualizations
+
+Each (variable) column specifies a graphical element of a plot
+
+* x-y coordinates of a point in a scatterplot
+* Height of a bar in a bar graph
+* Part of a bin count in a histogram
+
+## The layered grammar of graphics
+
+Ingredients of a plot:
+
+* Data table (must be in long format, that is, a row for each observation)
+* Specification of which column should be represented with which graphical element (coordinate, color, line style...). Provided to `ggplot` with the `aes` (aesthetic) function
+* Type of plot (scatterplot, line chart, histogram...). Named with `geom_` prefix
+* Coordinate system (cartesian flipped cartesian, world map...). Named with `coord_` prefix
+* Additional customization options
+
+```{r}
+ggplot(data = efficiency, aes(x = weight, y = mpg, color = transmission)) +
+    geom_point(size = 3) +
+    ggtitle("Fuel efficiency vs vehicle weight")
+```
+
+```{r}
+ggplot(data = efficiency, aes(x = cylinders, fill = transmission)) +
+    geom_bar() +
+    coord_flip()
+```
+
+```{r}
+ggplot(data = efficiency, aes(x = horsepower)) +
+    geom_histogram(bins = 10) +
+    geom_freqpoly(aes(color = engine), bins = 10)
+```
+
+# Two classes of variables in statistics
+
+* **Continuous variable**: Variable takes on values which fall on the real number line (or part of it)
+    + E.g. height, exam score, attendance count
+    + Encoded in number and date types
+* **Categorical variable**: Variable takes on values which fall into discrete categories
+    + E.g. ice-cream flavor, country of origin
+    + Encoded in string and factor types
+    + *Warning*: You may sometimes want to use integers as categorical variables. In order to tell R this, you must convert them to strings or factors first.
+	
+```{r}
+str(mtcars)
+```
+
+Notice that number of cylinders is a number, not a factor, so it is treated as a continuous variable.
+
+```{r}
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = cyl)) +
+    geom_point(size = 3)
+```
+
+But the only cylinder numbers are 4, 6 and 8, so we probably want to treat them as discrete, after all, the above graphic has a color designation for 3.56 cylinders, which isn't at all useful!
+
+```{r}
+ggplot(data = mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+    geom_point(size = 3)
+```
+
+By converting the number of cylinders to the factor type, R now knows to treat it as a discrete variable and the resulting plot makes much more sense!
+
+# The factor type
+
+R has an additional type `factor` that it uses to record a discrete variable with finitely many possible values, called "levels"
+
+```{r}
+mtcars$cyl
+factor(mtcars$cyl)
+```
+
+We can add additional levels that are not represented in the data vector to allow possible values
+```{r}
+factor(mtcars$cyl, levels = c(4, 6, 8, 12))
+```
+
+The levels of the factors are the important parts, so we can supply arbitrary labels:
+```{r}
+weekdays <- factor(
+    c(1, 1, 2, 3, 6, 7, 1, 2, 4, 5, 5, 2, 1),
+    levels = c(1, 2, 3, 4, 5, 6, 7),
+    labels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"),
+    ordered = TRUE)
+
+weekdays
+```
+
+We've also supplied the `ordered` argument to `factor()`.
+This lets R know about the order of the days of the week so that they can (for example) be plotted in the right order automatically
+
+We can also easily relabel factors:
+```{r}
+levels(weekdays) <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+
+weekdays
+```
+
+# Barplots: counts for a categorical variable
+
+*What is the distribution of cylinders in my dataset?*
+
+```{r}
+ggplot(data = efficiency, aes(x = cylinders)) +
+    geom_bar() +
+    ggtitle("Count by cylinders") +
+    xlab("No. of cylinders")
+```
+
+# Histograms: counts for a continuous variable
+
+*What is the distribution of `miles per gallon` in my dataset?*
+
+```{r}
+ggplot(data = efficiency, aes(x = mpg)) + 
+    geom_histogram() +
+    ggtitle("Histogram of miles per gallon")
+```
+
+Not ideal: too many bins, which defeats the purpose of a histogram.
+We can manually specify the bins using the `breaks` option.
+
+```{r}
+ggplot(data = efficiency, aes(x = mpg)) + 
+    geom_histogram(breaks = seq(10, 35, 5)) +
+    ggtitle("Histogram of miles per gallon")
+```
+
+
+# Scatterplots: continuous variable vs. continuous variable
+
+*What is the relationship between `mpg` and `weight`?*
+
+```{r}
+ggplot(data = efficiency, aes(y = mpg, x = weight)) + 
+    geom_point(size = 2) + 
+    ggtitle("Miles per gallon vs. weight")
+```
+
+# Lineplots: continuous variable vs. time variable
+
+*What is the relationship between `mpg` and time?*
+
+We will plot the yearly mean mpg against the year.
+To create the corresponding table, we use the following code, which we will explain in later lectures.
+```{r}
+library(fueleconomy)
+data(vehicles)
+mpg <- vehicles %>%
+    group_by(year) %>%
+    summarize(`mean highway mpg` = mean(hwy))
+
+head(mpg)
+```
+
+Now, we make our usual scatterplot
+```{r}
+
+ggplot(data = mpg, aes(y = `mean highway mpg`, x = year)) +
+    geom_point() +
+    ggtitle("Mean highway mpg by year")
+```
+
+**Hmmm, not so good...**
+
+Let's replace `geom_point` with `geom_line`:
+
+```{r}
+ggplot(data = mpg, aes(y = `mean highway mpg`, x = year)) +
+    geom_line() +
+    ggtitle("Mean highway mpg by year")
+```
+
+# Boxplots & violin plots: continuous variable vs. categorical variable
+
+*For each value of cylinder, what is the distribution of `mpg` like?*
+
+```{r}
+p <- ggplot(data = efficiency, aes(x = cylinders, y = mpg)) +
+    ggtitle("Distribution of mpg by cylinders")
+```
+
+We can store parts of a plot as a variable and re-use it with different layers:
+
+<div class="column-left-padded">
+```{r}
+p + geom_boxplot()
+```
+</div>
+<div class="column-right-padded">
+```{r}
+p + geom_violin()
+```
+</div>
+
+# Position: Arranging bar plots
+```{r}
+p <- ggplot(data = efficiency, aes(x = cylinders, fill = engine)) +
+    ggtitle("Count by cylinders") +
+    xlab("No. of cylinders")
+```
+In a bar plot, we have different ways of arranging the bars:
+
+<div class="column-left-padded">
+```{r}
+p + geom_bar(position = "stack") # default setting
+```
+</div>
+<div class="column-right-padded">
+
+```{r}
+p + geom_bar(position = "dodge")
+```
+</div>
+
+# Position: Seeing obscured data
+
+```{r}
+p <- ggplot(data = efficiency, aes(x = cylinders, y = mpg)) +
+    ggtitle("mpg by cylinders")
+```
+
+Often, points will obscure one another and we need to move them out of the way to see what's going on.
+<div class="column-left-padded">
+```{r}
+p + geom_point()
+```
+</div>
+<div class="column-right-padded">
+
+```{r}
+p + geom_point(position = "jitter")
+```
+</div>
+
+# Common graphical specifcations
+
+## Aesthetics
+
+These aesthetics are shared by many different geoms and so are good to know off the top of you head
+
+* `x`, `y`: coordinates
+* `color`: (out)line color, `fill`: fill color
+* `size`: point size or (out)line width,  `shape`: shape of points (circle, x, square etc...)
+* `linetype`: solid, dashed, dottet, etc. line specification
+* `alpha`: transparency
+* `group`: which points to link together with lines
+
+Some geoms have special aesthetics - these are usually documented in the help file for the corresponding geom.
+
+## Geoms
+
+We've gone over many of these in the previous slides, but they're assembled in this list for reference
+
+* `geom_point()`: Points on a scatter plot. Requires `x` and `y` aesthetics.
+* `geom_line()`: Points connected by a line in order of increasing x coordinated. Requires `x` and `y` aesthetics. `geom_path()` is similar, but connects the points in the order that they appear in the data frame, which is useful for drawing lines that are not of functions of the x-axis.
+* `geom_histogram()`: Histogram of values in column specified by `x`. `geom_freqpoly()` is a similar geom that is essentially just the outline of a histogram and is useful when you want to overlay several histograms.
+* `geom_bar()`: Bar chart indicating the number of observations in each of the categories specified by `x`. If you supply a `y` aesthetic and pass the argument `stat = "identity"`, the `y` aesthetic will specify the height of each bar.
+* `geom_polygon()`: Shape with vertices specified by x-y coordinates. Make sure to include a `group` aesthetic to specify which polygon each observation is part of. This is useful for drawing maps.
+
+# Shapes in R
+
+<center>
+![](img/ggplot Shapes.png){width=50%}
+</center>
+
+# Colors in R
+
+<div class="column-left-equal">
+* **By name:** e.g. "blue", "red", "black", "white" (full list [here](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf))
+* **By RGB value:** e.g. `rgb(0,0,1)`, `rgb(1,0,0)`, `rgb(0,0,0)`, `rgb(1,1,1)`
+* **By hexadecimal value:** e.g "#0000FF", "#FF0000", "#000000", "#FFFFFF"
+</div>
+<div class="column-right-equal"><center>
+![](img/RGB.png){width=70%}
+</center></div>
+
+# Combining multiple plots into one graphic: layers
+
+<img style="vertical-align:middle" src="img/Plot 2 Layers.png"> **=** <img style="vertical-align:middle" src="img/Plot Layer 1.png"> **+** <img style="vertical-align:middle" src="img/Plot Layer 2.png">
+
+Each layer contains (essentially):
+
+* 1 dataset
+* 1 **geom**etric object
+* 1 specification of **aes**thetic mappings
+
+```{r}
+ggplot() +
+    geom_boxplot(data = efficiency, aes(x = cylinders, y = mpg)) +
+    geom_point(data = efficiency, aes(x = cylinders, y = mpg), position = "jitter")
+```
+
+Often, theses are shared between layers, and can be inherited from the `ggplot()` function call to save time and minimize errors:
+
+```{r}
+ggplot(data = efficiency, aes(x = cylinders, y = mpg)) +
+    geom_boxplot() +
+    geom_point(position = "jitter")
+```
+
+The convention is to always pass arguments that are common to all elements of the graphic to `ggplot()` arguments that are specific to certain plots to their corresponding `geom_` function.
+
+This is efficient, and makes your intentions clearer for anyone reading your code (remember, in 99% of cases, this will be you!)
+
+# A more complicated multi-layer example
+
+```{r}
+vehicles
+mpg
+```
+
+Let's make a plot of mpg vs year.
+We'll include a series of boxplots from the `vehicles` table, and overlay a line showing the yearly average.
+
+```{r}
+ggplot(mapping = aes(x = year)) +
+    geom_boxplot(
+        data = vehicles,
+        aes(group = factor(year), y = hwy)) +
+    geom_line(
+        data = mpg,
+        aes(y = `mean highway mpg`),
+        color = "red", size = 2) +
+    labs(
+        title = "Change in highway mpg over time",
+        y = "Highway mpg"
+    )
+```
+
+Things to note in this plot:
+
+* `geom_boxplot` and `geom_line` both inherit the aesthetic `x = year` from `ggplot`, but other aesthetics are provided by the layers.
+* `geom_boxplot` has the `group` aesthetic, which makes sure that the boxplots are grouped by year even though the x-axis is a continuous variable.
+* The `color = "red", size = 2` arguments of `geom_line` are passed outside the `aes()` specification. This means that these specifications will be applied to all data in that plot, and `ggplot` will not produce a legend for this aesthetic.
+* The function `labs` allows us to label aesthetics. In our case, we've labelled the `y` aesthetic and kept the `x` aesthetic as the default value.
+* The first argument of `ggplot` is usually a data table. Since we are not specifying one, we need to use `ggplot(mapping = aes(x = year))` instead of `ggplot(aes(x = year))` to make this explicit to R.
+
+# Combining multiple plots into one graphic: facets
+
+Instead of seeing plots overlaid on top of each other, we might want to see them side-by-side.
+
+The `facet_wrap()` and `facet_grid()` functions allow us to split out data into several side-by-side plots according to some variable:
+```{r}
+ggplot(efficiency, aes(x = weight, y = mpg, color = factor(cylinders))) +
+    geom_point() +
+    facet_wrap(vars(factor(gears)))
+```
+
+* `facet_wrap` is for splitting along a single variable, and will arrange the plots in whatever grid it decides is most efficient.
+
+* `facet_grid` allows us to choose two faceting variables, and split our data further
+
+We can go crazy with these options, making our graphic display really a lot of information:
+```{r}
+ggplot(
+    data = efficiency,
+    mapping = aes(
+        x = weight,
+        y = mpg,
+        fill = factor(cylinders),
+        size = horsepower)) +
+    geom_point(color = "black", alpha = 0.5, shape = 21) + # outlined circle
+    facet_grid(
+        cols = vars(transmission),
+        rows = vars(engine),
+        margins = TRUE, # include unfaceted scatter plots on the edges
+        labeller = label_both) # include the name of the faceting variables
+```
+
+It's easy to go overboard with this, though, so be careful not to overdo it - the above graphic is fun and useful for general data exploration, but is getting so busy that it no longer makes a single coherent point.
+
+# Graphical customization
+
+Until now, we've only been specifying the *logic* of our plots and letting R do the actual laying out.
+
+This is a good thing: the people that designed `ggplot` are graphic designers and data visualization experts.
+You (probably) are not.
+
+However, if you do want something specific, R `ggplot` has extensive customization options available.
+
+## Themes
+
+These determine the look of everything that *isn't data*.
+That is, the axes, labels, gridlines, background, ...
+
+A full list of themes can be found on this page: <https://ggplot2.tidyverse.org/reference/ggtheme.html>
+
+```{r}
+p <- ggplot(data = efficiency, aes(x = weight, y = mpg, color = cylinders)) +
+    ggtitle("mpg by weight") +
+    geom_point()
+```
+
+<div class="main">
+<div class="column-left-padded">
+```{r}
+p + theme_gray() # default
+```
+
+```{r}
+p + theme_bw()
+```
+</div>
+
+<div class="column-right-padded">
+```{r}
+p + theme_classic()
+```
+
+```{r}
+p + theme_dark()
+```
+</div>
+</div>
+
+## Axis scales
+
+Done using the `scale_(x/y)_continuous` functions.
+Many examples given here: <https://ggplot2.tidyverse.org/reference/scale_continuous.html>
+
+<div class="main">
+<div class="column-left-padded">
+Set the x- and y-axis limits
+```{r}
+p +
+    scale_x_continuous(limits = c(0, 6000)) +
+    scale_y_continuous(limits = c(0, 40))
+```
+
+Specify where you want axis ticks
+```{r}
+p +
+    scale_x_continuous(
+        breaks = c(2000, 3650, 4000)) +
+    scale_y_continuous(
+        minor_breaks = c(10, 11, 12, 13, 14, 15))
+```
+</div>
+
+<div class="column-right-padded">
+Apply transformations to the axes
+```{r}
+p +
+    scale_x_continuous(trans = "reverse") + 
+    scale_y_continuous(trans = "log10")
+```
+
+Specify where you want the axes to appear
+```{r}
+p +
+    scale_x_continuous(position = "top") + 
+    scale_y_continuous(position = "right")
+```
+</div>
+</div>
+
+## Other customizations
+
+Generally, each aesthetic has a corresponding `scale_` function for customization.
+I've provided links to several of them here, as they work similarly to the functions that we've seen already:
+
+* Colors: <https://ggplot2.tidyverse.org/reference/scale_brewer.html>
+* Linetypes: <https://ggplot2.tidyverse.org/reference/scale_brewer.html>
+* Shapes: <https://ggplot2.tidyverse.org/reference/scale_shape.html>
+
+You can easily find more with some light googling.
+
+# Today's dataset: World Bank data
+
+<center>![](img/world_bank.png){width=80%}
+<div class="caption">(Source: [flickr](https://www.flickr.com/photos/worldbank/29903354950/) and [World Bank](https://www.worldbank.org/))</div>
+</center>
+
+# DataBank homepage
+
+<center>![](img/DataBank_homepage.png){width=80%}
+<div class="caption">[databank.worldbank.org](https://databank.worldbank.org/)</div>
+</center>
+
+# Interface for World Development Indicators
+
+<center>![](img/DataBank_WDI.png){width=80%}
+<div class="caption">[databank.worldbank.org/source/world-development-indicators](https://databank.worldbank.org/source/world-development-indicators)</div>
+</center>
