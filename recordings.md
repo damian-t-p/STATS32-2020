@@ -6,3 +6,4 @@ Due to slow upload speeds, the recordings should appear on this page hours after
 
 * [April 14: Course introduction and getting started with R](/assets/lecture-1/recording1.mp4)
 * [April 16: R objects, variable types and data tables](/assets/lecture-2/recording2.mp4)
+* [April 21: Data visualisation with `ggplot`](https://web.stanford.edu/~damianp/recordings/recording3.mp4)
