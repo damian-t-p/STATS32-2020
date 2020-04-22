@@ -1,9 +1,16 @@
 @def title = "Final project details"
 
+@@colbox-blue
+I had previously stated that projects and proposals should be submitted through Gradescope.
+Since it is impossible to submit .html files through Gradescope, **all project submissions should be emailed directly to me as detailed in the "Submission instructions" section of this page.**
+@@
+
+\toc
+
 # Final Project (80%, due May 16)
 To demonstrate your understanding of the material we have covered, you will perform a data analysis project in R.
-Each person should submit their own project.
-While you may discuss ideas and troubleshoot code with each other, each person must submit a unique project.
+**You may choose to do a project on your own or with one other teammate.** (If working with a teammate, only one person has to submit the work. The names and SUNet IDs of both teams should be clearly labeled.)
+While you may discuss ideas and troubleshoot code with each other, each person or team must submit a unique project.
 
 Here are the project minimum requirements:
 
@@ -24,9 +31,12 @@ The project proposal should be submitted as a text file (any format will do).
 In implementing your final project, you should try to stick as closely to your proposal as possible.
 If you are unable to do so, please provide a paragraph in your final project to explain the deviations from the proposal.
 
-# Grading & Deadlines
-Both the project proposal and final project should be submitted through Gradescope.
+# Submission instructions
+Both the project proposal and final project should be submitted through email to me at [damianp@stanford.edu](mailto:damianp@stanford.edu).
 
+Please include your SUNet ID (or IDs for team submissions) as well as the phrase "stats32 project submission" in the subject line of your project submission (or "stats32 proposal submission" for your proposal submission).
+
+# Grading and Deadlines
 The project proposal is due by May 1 (Fri), 23:59:59 and is worth 20%.
 
 The final project is due by May 16 (Fri), 23:59:59 and is worth 80%.
@@ -35,8 +45,11 @@ For each late day, a multiplicative penalty factor of 0.8 will be applied.
 Work that is submitted more than 2 days after the due date will receive **0 points**.
 If you foresee that you may have difficulty meeting these deadlines, please come and speak with me **immediately**.
 
-# What might the final project look like?
+# Finding project partners
+If you wish to work in a team and are looking for a partner, please post in the Discussions tab of the Canvas page.
+Either reply to the existing discussion post or create your own.
 
+# What might the final project look like?
 Here are some examples of good student projects from previous runs of this class:
 
 * [Development Assistance to Asia and the Asia-Pacific](/assets/past-projects/baroncatherine_LATE_135896_5133065_Baron-STATS-32-Project.html), by Catherine Baron
