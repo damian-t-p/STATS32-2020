@@ -17,7 +17,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-1/presentation1.html) and [recording](/assets/lecture-1/recording1.mp4)
+* Lecture: [slides](/assets/lecture-1/presentation1.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording1.mp4)
 * Lab: [Using R for calculation](/assets/lecture-1/lab1.html)
 * Exercises: [problems](/assets/lecture-1/practice1.html), [solutions](/assets/lecture-1/solutions1.html)
 
@@ -35,7 +35,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-2/pres2.html)  and [recording](/assets/lecture-2/recording2.mp4)
+* Lecture: [slides](/assets/lecture-2/pres2.html)  and [recording](https://web.stanford.edu/~damianp/recordings/recording2.mp4)
 * Lab: [Basic R objects](/assets/lecture-2/lab2.html)
 * Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html)
 
