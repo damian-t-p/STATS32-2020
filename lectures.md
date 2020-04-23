@@ -67,7 +67,19 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 23, *`dplyr` part 1: data manipulation and functions*
 
+**Before class**
 
+* *Required reading:* [R for Data Science, chapter 4: Data transformation]( and [recording](https://r4ds.had.co.nz/transform.html)
+
+**Materials**
+
+* Lecture: [slides](/assets/lecture-4/pres4.html)
+* Lab: [Data transformation](/assets/lecture-4/lab4.html)
+* Exercises: [problems](/assets/lecture-4/practice4.html), [solutions](/assets/lecture-4/solutions4.html)
+
+**Extras**
+
+* [Data Wrangling cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (Note: this sheet uses `gather` and `spread`, which are out-dated. We'll, talk about this sort of think in Lecture 7)
 
 # April 28, *`dplyr` part 2: data munging, importing and plotting*
 
