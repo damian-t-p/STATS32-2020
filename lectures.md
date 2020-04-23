@@ -67,6 +67,8 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 23, *`dplyr` part 1: data manipulation and functions*
 
+
+
 # April 28, *`dplyr` part 2: data munging, importing and plotting*
 
 # April 30, *Rmarkdown documents, presentations and workflow*
