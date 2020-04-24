@@ -44,7 +44,9 @@ However, live lectures and office hours are restricted to enrolled students and 
 * [RStudio shortcut reference](/assets/lecture-2/Valuable RStudio Shortcuts.pdf)
 * Data table: [`2016-presidential-election-county-results.csv`](/assets/lecture-2/2016-presidential-election-county-results.csv)
 
-# April 21, *Data visualisation with `ggplot`*
+# April 21 and 23, *Data visualisation with `ggplot`*
+
+*Note: the material from these slides stretched over two lectures*
 
 **Before class**
 
@@ -52,7 +54,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-3/pres3.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording3.mp4)
+* Lecture: [slides](/assets/lecture-3/pres3.html), [April 21 recording](https://web.stanford.edu/~damianp/recordings/recording3.mp4) and [April 23 recording](https://web.stanford.edu/~damianp/recordings/recording4.mp4)
 * Lab: [Data visualization](/assets/lecture-2/lab3.html)
 * Exercises: [problems](/assets/lecture-3/practice3.html), [solutions](/assets/lecture-3/solutions3.html)
 
@@ -65,11 +67,11 @@ However, live lectures and office hours are restricted to enrolled students and 
     + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R)
     + Information about the raw data table:  [`worldbank_metadata.csv`](/assets/lecture-3/data/worldbank_metadata.csv)
 
-# April 23, *`dplyr` part 1: data manipulation and functions*
+# April 28, *`dplyr`: data manipulation and functions*
 
 **Before class**
 
-* *Required reading:* [R for Data Science, chapter 4: Data transformation]( and [recording](https://r4ds.had.co.nz/transform.html)
+* *Required reading:* [R for Data Science, chapter 4: Data transformation](https://r4ds.had.co.nz/transform.html)
 
 **Materials**
 
@@ -80,8 +82,6 @@ However, live lectures and office hours are restricted to enrolled students and 
 **Extras**
 
 * [Data Wrangling cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (Note: this sheet uses `gather` and `spread`, which are out-dated. We'll, talk about this sort of think in Lecture 7)
-
-# April 28, *`dplyr` part 2: data munging, importing and plotting*
 
 # April 30, *Rmarkdown documents, presentations and workflow*
 
