@@ -75,7 +75,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-4/pres4.html)
+* Lecture: [slides](/assets/lecture-4/pres4.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording5.mp4)
 * Lab: [Data transformation](/assets/lecture-4/lab4.html)
 * Exercises: [problems](/assets/lecture-4/practice4.html), [solutions](/assets/lecture-4/solutions4.html)
 
