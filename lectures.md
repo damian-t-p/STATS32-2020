@@ -85,6 +85,22 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 30, *Rmarkdown documents, presentations and workflow*
 
+**Before class**
+
+* Instead of slides, this lecture will be conducted using two R Markdown documents, so download them and open them in RStudio before the lecture.
+
+**Materials**
+
+* Lecture: [introductory](/assets/lecture-6/introduction.rmd) and [advanced](/assets/lecture-6/advanced.rmd) R Markdown documents.
+* Lab: [Reproducible research](/assets/lecture-6/lab6.html)
+* Exercises: [problems](/assets/lecture-6/pracice6.html) <!--, [solutions](/assets/lecture-6/solutions6.html)-->
+
+**Extras**
+
+* Data table: [`airbnb_nyc_2019.csv`](/assets/lecture-6/airbnb_nyc_2019.csv)
+* [RMarkdown cheat sheet](/assets/lecture-6/rmarkdown-cheatsheet.pdf)
+* An in-depth guide to R Markdown: <https://bookdown.org/yihui/rmarkdown/>
+
 # May 1, **Project proposal due**
 
 # May 5, *Pastes, merges and joins: combining tables and dataset grammar*

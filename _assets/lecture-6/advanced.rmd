@@ -1,0 +1,63 @@
+---
+title: "R Markdown Advanced Example"
+author: "Damian Pavlyshyn"
+date: "4/30/2020"
+output:
+  html_document:
+    toc: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "D:/Users/Damian/stats32")
+```
+
+# Chunk options
+
+Sometimes we may want not include the code or outpout of a particular chunk.
+We can do this using "chunk options" that we include in the `{r <name> <options>}` part of the chunk opening.
+
+`echo=FALSE` will suppress code from the output, but will display the output.
+This is useful, for example, when you have a complicated plotting specification that isn't relevant to the analysis itself.
+However, **please do not use this option in your final project!** I want to see all your code!
+```{r echo=FALSE}
+1 + 1
+```
+
+We can also suppress both the code and the output with the `include=FALSE` option.
+In the following invisivle chunk, I set the variable `v`.
+```{r include=FALSE}
+v <- c(1, 2, 3)
+```
+
+Now I can access the variable even though the code that set it doesn't appear in the output file.
+```{r}
+v
+```
+
+Often when you run R code, it prints a bunch of information in addition to the actual output.
+By default, this is included in the output document, but it can be suppressed using `message=FALSE`.
+```{r message=FALSE}
+library(tidyverse)
+scores <- read_csv("example.csv")
+scores
+```
+
+The last very useful options are the `fig.height` and `fig.width` options, wihch control the size of any output figures.
+```{r fig.height=5, fig.width=2}
+ggplot(scores, aes(x = Year)) + 
+  geom_bar()
+```
+
+## The setup chunk
+
+We can set options for all chunks in the document with a sepcial "setup" chunk at the beginning of the document.
+This document's setup chunk also contains a line that sets the root directory, which is preferrable to using `setwd()` for some technical reasons.
+
+# Header options
+
+We can specify a lot of interesting formatting options in the header, as demonstrated in this document's header.
+In this case, we've numbered the sections and added an automatic table of contents.
+
+A good summary of available and exotic header options can be found [here](https://bookdown.org/yihui/rmarkdown/html-document.html).

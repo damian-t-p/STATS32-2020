@@ -1,0 +1,106 @@
+---
+title: "R Markdown Introduction"
+author: "Damian Pavlyshyn"
+date: "4/30/2020"
+output: html_document
+---
+
+# R Markdown
+
+This is an R Markdown document.
+Markdown is a simple formatting syntax for authoring formatted text documents.
+R Markdown is an extension of regular Markdown that allows you to run R code within the document itself and integrate the code and output directly as figures in your document.
+
+# Compiling the document
+
+The text that you edit directly in RStudio is an RMarkdown document, which is denoted by the `.rmd` file extension.
+On its own, this is a simple plain text file with no formatting and no capacity to execute code.
+
+To create an attractive document from this `.rmd` file, we need to "compile" or "knit" it by pressing the "Knit" button in the RStudio interface.
+This passes the `.rmd` file as input to the "knitr" program, which runs all of the R code in the document and uses that output together with the text and formatting instructions contained in the `.rmd` file to create an `.html` or `.pdf` file (or many other file types if you so choose).
+
+# The components of an R Markdown file
+
+Each R Markdown file consists of three parts
+
+1. **The YAML header:** The bit at the top. This contains meta-data about the document, such as the title, author, date and specification of the type of output file that you want. This doesn't appear in the output file.
+2. **Text:** Plain text together with Markdown formatting instructions. This is formatted by knitr and included as-is in the output document.
+3. **Code chunks:** R code that is run while the document is compiled. Both the code and the resulting output is displayed in the output document.
+
+## Code chunks
+
+These sections of R code are separated from the rest of the document by triple back-quotes (*note:* this is the symbol in the top-left of your keyboard on the same key as the tilde).
+The opening back-quotes must be followed by `{r <name>}`, where `<name>` a name that you choose for each chunk,
+
+When you're writing chunks, you can run them in exactly the same way as when you run code in the script editor.
+The output of the chunk is then displayed underneath it for your convenience.
+
+```{r mean}
+v <- c(-1, 2, 4, 0)
+mean(v)
+```
+
+When we compile the R Markdown document, the output will include nicely formatted versions of the input and the output, which is super useful for letting people know *exactly* what you're doing at each set of an analysis.
+
+All chunks share an environment, so variables from previous chunks carry over to subsequent ones:
+
+```{r variable-reuse}
+v[1]
+```
+
+We can also include plots in RMarkdown chunks:
+
+```{r plot}
+library(tidyverse)
+ggplot(pressure, aes(x = temperature, y = pressure)) + 
+  geom_point()
+```
+
+## Text and Markdown formatting
+
+Markdown is a specification for formatting text which is reasonably flexible which still being able to be represented in plain text.
+
+Notice that paragraph breaks are indicated by a blank line - text started on a new line immediately below another block of text will **not** start a new paragraph.
+It's generally good practice to have each sentence on its own line, but don't worry too much about this.
+
+### Sections and subsections
+
+Well-structured documents are divided into sections and sub-sections (but don't go crazy on subsection hierarchy).
+
+New sections are begun with headings.
+A heading is denoted in Markdown with some number of \# symbols --- the more \#s, the deeper in the section hierarchy and the smaller the heading.
+
+### Text formatting
+
+We can format the appearance of text using Markdown commands; in fact, we've seen several examples of this already.
+We can make text *italic*, **bold**, ^superscripted^ or in a `typewriter` font.
+
+We can also include hyperlinks <http://web.stanford.edu/class/stats32/> directly, as well as [named links](http://web.stanford.edu/class/stats32/).
+
+External images are included using a similar syntax:
+![](D:/Users/Damian/stats32/function.png)
+
+### Lists
+
+RMarkdown can make bulleted lists by starting lines with asterisks:
+
+* A first item
+* Another item
+    + A subitem denoted with *exactly* four spaces before its plus
+
+Similarly, we can make numbered lists:
+
+1. Fist item
+2. Second item
+    + Item 2a
+3. A third item
+
+In fact, we don't even have to number the items properly
+
+1. This is the first item
+1. Though the source numbering is still 1, this is the second item
+1. Still counting up...
+
+# The header
+The header included in this document is enough for most basic purposes.
+Headers tend to contain more detailed document-wide formatting information, some of which are addressed in the advanced R Markdown example document.
