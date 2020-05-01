@@ -91,9 +91,9 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [introductory](/assets/lecture-6/introduction.rmd) and [advanced](/assets/lecture-6/advanced.rmd) R Markdown documents.
+* Lecture: [introductory](/assets/lecture-6/introduction.rmd) and [advanced](/assets/lecture-6/advanced.rmd) R Markdown documents, and [recording](https://web.stanford.edu/~damianp/recordings/recording6.mp4)
 * Lab: [Reproducible research](/assets/lecture-6/lab6.html)
-* Exercises: [problems](/assets/lecture-6/pracice6.html) <!--, [solutions](/assets/lecture-6/solutions6.html)-->
+* Exercises: [problems](/assets/lecture-6/pracice6.html), [solutions](/assets/lecture-6/solutions6.html)
 
 **Extras**
 
