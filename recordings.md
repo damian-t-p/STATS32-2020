@@ -9,4 +9,4 @@ Due to slow upload speeds, the recordings should appear on this page the evening
 * [April 21: Data visualisation with `ggplot` part 1](https://web.stanford.edu/~damianp/recordings/recording3.mp4)
 * [April 23: Data visualisation with `ggplot` part 2](https://web.stanford.edu/~damianp/recordings/recording4.mp4)
 * [April 28: Data manipulation with `dplyr`](https://web.stanford.edu/~damianp/recordings/recording5.mp4)
-* [April 30: Introduction to R Markdown](https://web.stanford.edu/~damianp/recordings/recording6ju.mp4)
+* [April 30: Introduction to R Markdown](https://web.stanford.edu/~damianp/recordings/recording6.mp4)
