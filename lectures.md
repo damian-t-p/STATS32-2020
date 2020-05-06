@@ -107,11 +107,11 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-7/pres7.html)
+* Lecture: [slides](/assets/lecture-7/pres7.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording7.mp4)
 * Lab: [Data joining and maps](/assets/lecture-7/lab7.html) - this lab uses the following datsets:
   + [`2016_US_Presdential_Results_for_class.csv`](/assets/lecture-7/2016_US_Presdential_Results_for_class.csv)
   + [`county_map_fips.rds`](/assets/lecture-7/county_map_fips.rds)
-* Exercises: [problems](/assets/lecture-7/practice7.html)<!--, [solutions](/assets/lecture-7/solutions7.html)-->
+* Exercises: [problems](/assets/lecture-7/practice7.html), [solutions](/assets/lecture-7/solutions7.html)
 
 **Extras**
 
