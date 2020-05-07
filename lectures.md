@@ -122,7 +122,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-8/pres8.html)
+* Lecture: [slides](/assets/lecture-8/pres8.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording8.mp4)
 
 **Extras**
 
