@@ -116,8 +116,16 @@ However, live lectures and office hours are restricted to enrolled students and 
 **Extras**
 
 * Data table: [`Drought_data.csv`](/assets/lecture-7/Drought_data.csv)
-* Advances mapping with R: [Getting started with `ggmap`](/assets/lecture-7/Getting-started-with-ggmap.html)
+* Advanced mapping with R: [Getting started with `ggmap`](/assets/lecture-7/Getting-started-with-ggmap.html)
 
-# May 7 , *Fancy packages and you*
+# May 7 , *Useful tips, packages and FAQs*
+
+**Materials**
+
+* Lecture: [slides](/assets/lecture-8/pres8.html)
+
+**Extras**
+
+* [`lubridate` cheat sheet](/assets/lecture-8/R_lubridate.pdf)
 
 # May 16, **Final project due**
