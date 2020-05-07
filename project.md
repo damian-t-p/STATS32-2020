@@ -7,7 +7,7 @@ Since it is impossible to submit .html files through Gradescope, **all project s
 
 \toc
 
-# Final Project (80%, due May 16)
+# Final Project (80%, due Sat May 16 at 23:59:59)
 To demonstrate your understanding of the material we have covered, you will perform a data analysis project in R.
 **You may choose to do a project on your own or with one other teammate.** (If working with a teammate, only one person has to submit the work. The names and SUNet IDs of both teams should be clearly labeled.)
 While you may discuss ideas and troubleshoot code with each other, each person or team must submit a unique project.
@@ -21,7 +21,7 @@ Here are the project minimum requirements:
 * At least 3 data visualizations (not all of the same type).
 * A "Conclusion" section to summarize the results of the analysis, as well as any deviations from the project proposal.
 
-# Project Proposal (20%, due May 1)
+# Project Proposal (20%, due Fri May 1 at 23:59:59)
 For the project proposal, submit a 1-2 paragraph description of your final project.
 You should provide details on the problem you wish to explore, any datasets that you will use, and potential visualizations.
 The proposal is a way for me to make sure that you have enough structure and data to complete the project.
@@ -39,7 +39,7 @@ Please include your SUNet ID (or IDs for team submissions) as well as the phrase
 # Grading and Deadlines
 The project proposal is due by May 1 (Fri), 23:59:59 and is worth 20%.
 
-The final project is due by May 16 (Fri), 23:59:59 and is worth 80%.
+The final project is due by May 16 (Sat), 23:59:59 and is worth 80%.
 
 For each late day, a multiplicative penalty factor of 0.8 will be applied.
 Work that is submitted more than 2 days after the due date will receive **0 points**.
