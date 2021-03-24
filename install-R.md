@@ -26,31 +26,31 @@ Follow these instructions if you have not previously installed R, Rstudio or tid
 
 **Mac**
 1. Go to <https://cloud.r-project.org/bin/macosx/>
-1. Click "R-3.6.3.pkg"
+1. Click "R-4.0.4.pkg"
 1. When the file finishes downloading, double-click to install. You should be able to click "Next" to all dialogs to finish the installation.
 
 **Windows**
 1. Go to <https://cloud.r-project.org/bin/windows/base/>
-1. Click "Download R 3.6.3 for Windows"
+1. Click "Download R 4.0.4 for Windows"
 1. When the file finishes downloading, double-click to install. You should be able to click "Next" to all dialogs to finish the installation.
 
 ## Installing RStudio
 1. Go to <https://rstudio.com/products/rstudio/download/#download>
 2. Select the installer appropriate for your operating system
-  * `RStudio-1.2.5033.dmg` for Mac
-  * `RStudio-1.2.5033.exe` for Windows
+  * `RStudio-1.4.1106.dmg` for Mac
+  * `RStudio-1.4.1106.exe` for Windows
 3. When the file finishes downloading, double-click to install. You should be able to click "Next" to all dialogs to finish the installation.
 
 ## Installing tidyverse
 1. Launch RStudio
 1. In the bottom-left tab, labelled "Console", type `install.packages("tidyverse")` and hit enter.
-1. You will see various text appear in the console. Wait until you see a `>` symbol followed by a blinking cursor.
+1. You will see various text appear in the console. Wait until you see a `>` symbol followed by a blinking cursor (this looks very dramatic, and may take up to a minute, so don't be surprised).
 
 # Updating installed software
 
 If you have R and/or RStudio installed, you must still make sure that they are up to date so that you can you can run all of the necessary code.
 
-In this class, we will be using R version 3.6.3 (Holding the Windsock).
+In this class, we will be using R version 4.0.4 (Lost Library Book).
 
 If in any doubt, follow the "Installing R" instructions.
 They will work even if you already have software installed.
@@ -58,11 +58,11 @@ They will work even if you already have software installed.
 ## Updating R
 
 1. Open Rstudio.
-1. If the first line of your console reads `R version 3.6.3 (2020) -- "Holding the Windsock"`, then you have the correct version of R.
+1. If the first line of your console reads `R version 4.0.4 (2021-02-15) -- "Lost Library Book"`, then you have the correct version of R.
 1. If not, follow the instructions in this guide for "Installing R."
 1. Once you have installed the latest version of R, open RStudio and select Tools > Global Options...
-1. If the field "R Version" contains R version 3.6.3, you are finished. Otherwise, click the button "Change..." next to this field.
-1. Click the Radio button "Choose a specific verion of R" and select R-3.6.3.
+1. If the field "R Version" contains R version 4.0.4, you are finished. Otherwise, click the button "Change..." next to this field.
+1. Click the Radio button "Choose a specific verion of R" and select R-4.0.4.
 1. Click OK, and restart RStudio.
 
 ## Updating RStudio
@@ -85,7 +85,7 @@ In the console, run the following commands by typing them into the console and h
 1. `packageVersion("tidyverse")`. You should see the output `[1] '1.3.0'`. If you see anything else, refer to the "Updating tidyverse" section of this guide.
 1. `qplot(-5:5, (-5:5)^2, geom="line")`. You should see a parabola plotted in the bottom-right corner.
 
-The full output should look like this:
+The full output should look like this (perhaps with a different coloured theme):
 
 [![Expected test output](/assets/rstudio-test-output.png)](/assets/rstudio-test-output.png)
 

@@ -7,7 +7,7 @@ Since it is impossible to submit .html files through Gradescope, **all project s
 
 \toc
 
-# Final Project (80%, due Sat May 16 at 23:59:59)
+# Final Project (80%, due Fri April 23 at 23:59:59)
 To demonstrate your understanding of the material we have covered, you will perform a data analysis project in R.
 **You may choose to do a project on your own or with one other teammate.** (If working with a teammate, only one person has to submit the work. The names and SUNet IDs of both teams should be clearly labeled.)
 While you may discuss ideas and troubleshoot code with each other, each person or team must submit a unique project.

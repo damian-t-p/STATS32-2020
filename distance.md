@@ -1,16 +1,5 @@
 @def title = "Changes to the course due to distance instruction"
 
-# Revised class schedule
-
-The class will still be held in weeks 1-6 of quarter.
-Due to the delay of first quarter by one week, this means:
-* **Lectures:** Weeks 2-5, April 13 to May 7
-* **Office hours** Weeks 1-6, April 8 to May 13
-
-All deadlines are also pushed back by a week, and the accurate dates are those listed on this website.
-
-Lectures and office hours will be held through Zoom, and the link will be provided closer to the start of quarter.
-
 # Course format
 
 This course is usually with interactive sessions where I would assist you in person as you work through labs.

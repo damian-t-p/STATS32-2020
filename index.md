@@ -8,8 +8,8 @@ where appropriate -->
 
 @@colbox-blue
 # Announcements
-* Stanford has already announced many major changes to instruction, and this uncertainty is likely to continue. Please regularly monitor the [course changes](/distance/) page for up-to-date information about this course.
-* No lectures week 1 (April 7, April 9)
+<!-- * Stanford has already announced many major changes to instruction, and this uncertainty is likely to continue. Please regularly monitor the [course changes](/distance/) page for up-to-date information about this course. -->
+* No lectures week 1 (April 6, April 8)
 * Make sure to [install R](/install-R/) _before_ coming to class. If you are having trouble, I will be holding office hours on April 8 that will focus on installation and set-up.
 @@
 
@@ -32,18 +32,17 @@ Damian Pavlyshyn ([damianp@stanford.edu](mailto:damianp@stanford.edu))
 
 # Schedule
 
-Class meets during weeks two to five (_not_ week 1), from April 14 to May 7.
+Class meets during weeks two to five (_not_ week 1), from April 6 to April 29.
 
-Office hours will be held during weeks one to six, from April 8 to May 13.
+Office hours will be held during weeks two to six, from April 7 to May 5.
 
-* **Lecture:** Tuesdays and Thursdays 12:00 - 1:20 by Zoom (link available through Canvas).
-* **Office hours:** Wednesdays 9:00 - 11:00 by Zoom (link available through Canvas).
+* **Lecture:** Tuesdays and Thursdays 12:30 - 13:50 PDT by Zoom (link available through Canvas).
+* **Office hours:** Wednesdays TBA by Zoom (link available through Canvas).
 
 # Assignments
 
 ## Final project & proposal (graded)
 The only graded assignments for this class are the final project (80%) and the project proposal (20%).
-Click here for more details on these assignments.
 
 ## Programming questions (not graded)
 Programming is one of those things that you can't learn just by listening to lectures: you have to practice (and practice and practice)!
