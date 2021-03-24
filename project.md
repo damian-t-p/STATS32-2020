@@ -1,13 +1,12 @@
 @def title = "Final project details"
 
 @@colbox-blue
-I had previously stated that projects and proposals should be submitted through Gradescope.
 Since it is impossible to submit .html files through Gradescope, **all project submissions should be emailed directly to me as detailed in the "Submission instructions" section of this page.**
 @@
 
 \toc
 
-# Final Project (80%, due Fri April 23 at 23:59:59)
+# Final Project (80%, due Fri May 7 at 23:59:59)
 To demonstrate your understanding of the material we have covered, you will perform a data analysis project in R.
 **You may choose to do a project on your own or with one other teammate.** (If working with a teammate, only one person has to submit the work. The names and SUNet IDs of both teams should be clearly labeled.)
 While you may discuss ideas and troubleshoot code with each other, each person or team must submit a unique project.
@@ -21,7 +20,24 @@ Here are the project minimum requirements:
 * At least 3 data visualizations (not all of the same type).
 * A "Conclusion" section to summarize the results of the analysis, as well as any deviations from the project proposal.
 
-# Project Proposal (20%, due Fri May 1 at 23:59:59)
+## Rubric
+
+The final project is graded out of 5 points - 2 or more is a guaranteed pass. The rubric is:
+
+5 - An excellent analysis that offers serious insight into the data and comes to non-trivial conclusions.
+
+4 - A robust analysis with varied, interesting and appropriate graphics.
+
+3 - A basic analysis that showcases some aspects of the data, but is missing variety and/or leaves more interesting avenues unexplored.
+
+2 - An acceptable analysis that meets the minimum requirements of the project.
+
+1 - A submission with major components missing
+
+0 - No submission
+
+
+# Project Proposal (20%, due Fri April 23 at 23:59:59)
 For the project proposal, submit a 1-2 paragraph description of your final project.
 You should provide details on the problem you wish to explore, any datasets that you will use, and potential visualizations.
 The proposal is a way for me to make sure that you have enough structure and data to complete the project.
@@ -31,19 +47,23 @@ The project proposal should be submitted as a text file (any format will do).
 In implementing your final project, you should try to stick as closely to your proposal as possible.
 If you are unable to do so, please provide a paragraph in your final project to explain the deviations from the proposal.
 
+## Rubric
+
+The project proposal is graded out of 2 points. The rubric is:
+
+2 - A convincing proposal indicating that the student is on track to complete the final project.
+
+1 - A proposal that shows a lack of preparation required to complete the final project without additional intervention.
+
+0 - No submission
+
 # Submission instructions
 Both the project proposal and final project should be submitted through email to me at [damianp@stanford.edu](mailto:damianp@stanford.edu).
 
-Please include your SUNet ID (or IDs for team submissions) as well as the phrase "stats32 project submission" in the subject line of your project submission (or "stats32 proposal submission" for your proposal submission).
+The subject line of your submissions should have the following format:
+* stats32 proposal submission (your SUNet ID), (your partner's SUNet ID if applicable)
+* stats32 project submission (your SUNet ID), (your partner's SUNet ID if applicable)
 
-# Grading and Deadlines
-The project proposal is due by May 1 (Fri), 23:59:59 and is worth 20%.
-
-The final project is due by May 16 (Sat), 23:59:59 and is worth 80%.
-
-For each late day, a multiplicative penalty factor of 0.8 will be applied.
-Work that is submitted more than 2 days after the due date will receive **0 points**.
-If you foresee that you may have difficulty meeting these deadlines, please come and speak with me **immediately**.
 
 # Finding project partners
 If you wish to work in a team and are looking for a partner, please post in the Discussions tab of the Canvas page.

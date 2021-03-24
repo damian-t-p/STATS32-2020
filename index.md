@@ -1,5 +1,5 @@
 @def title = "STATS 32: Introduction to R for Undergraduates"
-@def subtitle = "Spring 2019-2020"
+@def subtitle = "Spring 2020-2021"
 @def hasmath = true
 @def hascode = true
 <!-- Note: by default hasmath == true and hascode == false. You can change this in
@@ -10,7 +10,8 @@ where appropriate -->
 # Announcements
 <!-- * Stanford has already announced many major changes to instruction, and this uncertainty is likely to continue. Please regularly monitor the [course changes](/distance/) page for up-to-date information about this course. -->
 * No lectures week 1 (April 6, April 8)
-* Make sure to [install R](/install-R/) _before_ coming to class. If you are having trouble, I will be holding office hours on April 8 that will focus on installation and set-up.
+* Make sure to [install R](/install-R/) _before_ coming to class.
+* I will be trying to make this course more interactive (as much as is feasible be distance). My approach is outlined in [course changes](/distance/), so please read it and come to the first class with an opinion about this!
 @@
 
 # Course description
@@ -37,7 +38,7 @@ Class meets during weeks two to five (_not_ week 1), from April 6 to April 29.
 Office hours will be held during weeks two to six, from April 7 to May 5.
 
 * **Lecture:** Tuesdays and Thursdays 12:30 - 13:50 PDT by Zoom (link available through Canvas).
-* **Office hours:** Wednesdays TBA by Zoom (link available through Canvas).
+* **Office hours:** Wednesdays 9:00 - 11:00 PDT by Zoom (link available through Canvas).
 
 # Assignments
 

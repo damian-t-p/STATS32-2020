@@ -11,7 +11,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Before class**
 
-* [Install R, RStudio and `tidyverse`](/install-R/). You *must* do this before the session, as I will not devote lecture time to it! If you are having trouble, attend the office hours at 9am on April 8
+* [Install R, RStudio and `tidyverse`](/install-R/). You *must* do this before the session, as I will not devote lecture time to it! If you are having trouble, attend the office hours at 9am on April 7.
 * *Required reading:* [Variable types](/assets/lecture-1/Variable Types.pdf)
 * Read through the [showcase document](/assets/lecture-1/taxis.html). No need to study this in detail yet - the document briefly demonstrates most of the techniques that we'll cover in this class, so you'll know what to look forward to!
 

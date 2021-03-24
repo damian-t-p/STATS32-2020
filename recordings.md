@@ -4,6 +4,10 @@ Enrolled students can also find the lecture recordings on the Canvas Zoom tab.
 
 Due to slow upload speeds, the recordings should appear on this page the evening of the corresponding lecture.
 
+# 2021 Recordings
+
+Links to this quarter's recordings will appear here
+
 # 2020 Recordings
 
 * [April 14: Course introduction and getting started with R](https://web.stanford.edu/~damianp/recordings/recording1.mp4)
