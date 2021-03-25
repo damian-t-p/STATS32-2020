@@ -14,8 +14,8 @@ If you are having trouble, come and see me during office hours.
 # Software versions
 
 Before the first lecture you should have the following software installed on your machine:
-* `R 3.6.3`
-* `RStudio 1.2.5033`
+* `R 4.0.4`
+* `RStudio 1.4.1106`
 * `tidyverse 1.3.0`
 
 # Installing for the first time
