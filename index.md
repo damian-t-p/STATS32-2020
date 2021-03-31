@@ -9,7 +9,7 @@ where appropriate -->
 @@colbox-blue
 # Announcements
 <!-- * Stanford has already announced many major changes to instruction, and this uncertainty is likely to continue. Please regularly monitor the [course changes](/distance/) page for up-to-date information about this course. -->
-* No lectures week 1 (April 6, April 8)
+* No lectures week 1 (March 30, April 1) -- apologies, the dates of week 1 were previously wrong.
 * Make sure to [install R](/install-R/) _before_ coming to class.
 * I will be trying to make this course more interactive (as much as is feasible be distance). My approach is outlined in [course changes](/distance/), so please read it and come to the first class with an opinion about this!
 @@

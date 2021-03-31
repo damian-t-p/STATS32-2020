@@ -6,7 +6,7 @@ Due to slow upload speeds, the recordings should appear on this page the evening
 
 # 2021 Recordings
 
-Links to this quarter's recordings will appear here
+Links to this quarter's recordings will appear here after the first lecture on April 6.
 
 # 2020 Recordings
 
