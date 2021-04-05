@@ -1,4 +1,0 @@
-Sitemap: https://damian-t-p.github.io/STATS32-2020/sitemap.xml
-
-User-agent: *
-Disallow:
