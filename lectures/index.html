@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="/STATS32-2020/libs/katex/katex.min.css">
-     
+  
   
   <link rel="stylesheet" href="/STATS32-2020/css/franklin.css">
   <link rel="stylesheet" href="/STATS32-2020/css/pure.css">
@@ -40,18 +39,17 @@
     </div>
     <div id="main"> <!-- Closed in foot -->
       <div class="header">
-        <h1>Lecture materials</h1>
+          <h1>Lecture materials</h1>
+	  <h2></h2>
       </div>
 
 <!-- Content appended here -->
-
-<div class="franklin-content">
-<div class="colbox-blue">Lecture recordings will be posted on this page. However, live lectures and office hours are restricted to enrolled students and are accessible only through Canvas.</div>
-<div class="franklin-toc"><ol><li><a href="/STATS32-2020/lectures/index.html#april_14_course_introduction_and_getting_started_with_r">April 14, <em>Course introduction and getting started with R</em></a></li><li><a href="/STATS32-2020/lectures/index.html#april_16_r_objects_variable_types_and_data_tables">April 16, <em>R objects, variable types and data tables</em></a></li><li><a href="/STATS32-2020/lectures/index.html#april_21_and_23_data_visualisation_with_ggplot">April 21 and 23, <em>Data visualisation with <code>ggplot</code></em></a></li><li><a href="/STATS32-2020/lectures/index.html#april_28_dplyr_data_manipulation_and_functions">April 28, <em><code>dplyr</code>: data manipulation and functions</em></a></li><li><a href="/STATS32-2020/lectures/index.html#april_30_rmarkdown_documents_presentations_and_workflow">April 30, <em>Rmarkdown documents, presentations and workflow</em></a></li><li><a href="/STATS32-2020/lectures/index.html#may_1_project_proposal_due">May 1, <strong>Project proposal due</strong></a></li><li><a href="/STATS32-2020/lectures/index.html#may_5_pastes_merges_and_joins_combining_tables_and_dataset_grammar">May 5, <em>Pastes, merges and joins: combining tables and dataset grammar</em></a></li><li><a href="/STATS32-2020/lectures/index.html#may_7_useful_tips_packages_and_faqs">May 7 , <em>Useful tips, packages and FAQs</em></a></li><li><a href="/STATS32-2020/lectures/index.html#may_16_final_project_due">May 16, <strong>Final project due</strong></a></li></ol></div>
-<h1 id="april_14_course_introduction_and_getting_started_with_r"><a href="/STATS32-2020/lectures/index.html#april_14_course_introduction_and_getting_started_with_r">April 14, <em>Course introduction and getting started with R</em></a></h1>
+<div class="franklin-content"><div class="colbox-blue">Lecture recordings will be posted on this page. However, live lectures and office hours are restricted to enrolled students and are accessible only through Canvas.</div>
+<div class="franklin-toc"><ol><li><a href="#april_6_course_introduction_and_getting_started_with_r">April 6, <em>Course introduction and getting started with R</em></a></li></ol></div>
+<h1 id="april_6_course_introduction_and_getting_started_with_r"><a href="#april_6_course_introduction_and_getting_started_with_r" class="header-anchor">April 6, <em>Course introduction and getting started with R</em></a></h1>
 <p><strong>Before class</strong></p>
 <ul>
-<li><p><a href="/STATS32-2020/install-R/">Install R, RStudio and <code>tidyverse</code></a>. You <em>must</em> do this before the session, as I will not devote lecture time to it&#33; If you are having trouble, attend the office hours at 9am on April 8</p>
+<li><p><a href="/STATS32-2020/install-R/">Install R, RStudio and <code>tidyverse</code></a>. You <em>must</em> do this before the session, as I will not devote lecture time to it&#33; If you are having trouble, attend the office hours at 9am on April 7.</p>
 </li>
 <li><p><em>Required reading:</em> <a href="/STATS32-2020/assets/lecture-1/Variable Types.pdf">Variable types</a></p>
 </li>
@@ -74,157 +72,15 @@
 <li><p>Data tables: <a href="/STATS32-2020/assets/lecture-1/ny-taxi-data/weather.csv"><code>weather.csv</code></a>, <a href="/STATS32-2020/assets/lecture-1/ny-taxi-data/rides.csv"><code>rides.csv</code></a></p>
 </li>
 </ul>
-<h1 id="april_16_r_objects_variable_types_and_data_tables"><a href="/STATS32-2020/lectures/index.html#april_16_r_objects_variable_types_and_data_tables">April 16, <em>R objects, variable types and data tables</em></a></h1>
-<p><strong>Before class</strong></p>
-<ul>
-<li><p><em>Suggested reading:</em> <a href="/STATS32-2020/assets/lecture-2/Summary Statistics.pdf">Summary statistics</a></p>
-</li>
-</ul>
-<p><strong>Materials</strong></p>
-<ul>
-<li><p>Lecture: <a href="/STATS32-2020/assets/lecture-2/pres2.html">slides</a>  and <a href="https://web.stanford.edu/~damianp/recordings/recording2.mp4">recording</a></p>
-</li>
-<li><p>Lab: <a href="/STATS32-2020/assets/lecture-2/lab2.html">Basic R objects</a></p>
-</li>
-<li><p>Exercises: <a href="/STATS32-2020/assets/lecture-2/practice2.html">problems</a>, <a href="/STATS32-2020/assets/lecture-2/solutions2.html">solutions</a></p>
-</li>
-</ul>
-<p><strong>Extras</strong></p>
-<ul>
-<li><p><a href="/STATS32-2020/assets/lecture-2/Valuable RStudio Shortcuts.pdf">RStudio shortcut reference</a></p>
-</li>
-<li><p>Data table: <a href="/STATS32-2020/assets/lecture-2/2016-presidential-election-county-results.csv"><code>2016-presidential-election-county-results.csv</code></a></p>
-</li>
-</ul>
-<h1 id="april_21_and_23_data_visualisation_with_ggplot"><a href="/STATS32-2020/lectures/index.html#april_21_and_23_data_visualisation_with_ggplot">April 21 and 23, <em>Data visualisation with <code>ggplot</code></em></a></h1>
-<p><em>Note: the material from these slides stretched over two lectures</em></p>
-<p><strong>Before class</strong></p>
-<ul>
-<li><p><em>Required reading:</em> <a href="https://r4ds.had.co.nz/data-visualisation.html">R for Data Science, chapter 3: Data visualisation</a></p>
-</li>
-</ul>
-<p><strong>Materials</strong></p>
-<ul>
-<li><p>Lecture: <a href="/STATS32-2020/assets/lecture-3/pres3.html">slides</a>, <a href="https://web.stanford.edu/~damianp/recordings/recording3.mp4">April 21 recording</a> and <a href="https://web.stanford.edu/~damianp/recordings/recording4.mp4">April 23 recording</a></p>
-</li>
-<li><p>Lab: <a href="/STATS32-2020/assets/lecture-3/lab3.html">Data visualization</a></p>
-</li>
-<li><p>Exercises: <a href="/STATS32-2020/assets/lecture-3/practice3.html">problems</a>, <a href="/STATS32-2020/assets/lecture-3/solutions3.html">solutions</a></p>
-</li>
-</ul>
-<p><strong>Extras</strong></p>
-<ul>
-<li><p><a href="/STATS32-2020/assets/lecture-3/ggplot2-cheatsheet.pdf">ggplot reference sheet</a></p>
-</li>
-<li><p><a href="/STATS32-2020/assets/lecture-3/efficiency.html">Code for generating <code>efficiency</code></a></p>
-</li>
-<li><p>Data tables: <a href="/STATS32-2020/assets/lecture-3/data/worldbank_data_tidy.csv"><code>worldbank_data_tidy.csv</code></a></p>
-<ul>
-<li><p>Data sourced directly from world bank website: <a href="/STATS32-2020/assets/lecture-3/data/worldbank_data_raw.csv"><code>worldbank_data_raw.csv</code></a></p>
-</li>
-<li><p>Script for tidying data table: <a href="/STATS32-2020/assets/lecture-3/data/worldbank_ETL.R"><code>worldbank_ETL.R</code></a></p>
-</li>
-<li><p>Information about the raw data table:  <a href="/STATS32-2020/assets/lecture-3/data/worldbank_metadata.csv"><code>worldbank_metadata.csv</code></a></p>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="april_28_dplyr_data_manipulation_and_functions"><a href="/STATS32-2020/lectures/index.html#april_28_dplyr_data_manipulation_and_functions">April 28, <em><code>dplyr</code>: data manipulation and functions</em></a></h1>
-<p><strong>Before class</strong></p>
-<ul>
-<li><p><em>Required reading:</em> <a href="https://r4ds.had.co.nz/transform.html">R for Data Science, chapter 4: Data transformation</a></p>
-</li>
-</ul>
-<p><strong>Materials</strong></p>
-<ul>
-<li><p>Lecture: <a href="/STATS32-2020/assets/lecture-4/pres4.html">slides</a> and <a href="https://web.stanford.edu/~damianp/recordings/recording5.mp4">recording</a></p>
-</li>
-<li><p>Lab: <a href="/STATS32-2020/assets/lecture-4/lab4.html">Data transformation</a></p>
-</li>
-<li><p>Exercises: <a href="/STATS32-2020/assets/lecture-4/practice4.html">problems</a>, <a href="/STATS32-2020/assets/lecture-4/solutions4.html">solutions</a></p>
-</li>
-</ul>
-<p><strong>Extras</strong></p>
-<ul>
-<li><p><a href="https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">Data Wrangling cheat sheet</a> &#40;Note: this sheet uses <code>gather</code> and <code>spread</code>, which are out-dated. We&#39;ll, talk about this sort of think in Lecture 7&#41;</p>
-</li>
-</ul>
-<h1 id="april_30_rmarkdown_documents_presentations_and_workflow"><a href="/STATS32-2020/lectures/index.html#april_30_rmarkdown_documents_presentations_and_workflow">April 30, <em>Rmarkdown documents, presentations and workflow</em></a></h1>
-<p><strong>Before class</strong></p>
-<ul>
-<li><p>Instead of slides, this lecture will be conducted using two R Markdown documents, so download them and open them in RStudio before the lecture.</p>
-</li>
-</ul>
-<p><strong>Materials</strong></p>
-<ul>
-<li><p>Lecture: <a href="/STATS32-2020/assets/lecture-6/introduction.rmd">introductory</a> and <a href="/STATS32-2020/assets/lecture-6/advanced.rmd">advanced</a> R Markdown documents, and <a href="https://web.stanford.edu/~damianp/recordings/recording6.mp4">recording</a></p>
-</li>
-<li><p>Lab: <a href="/STATS32-2020/assets/lecture-6/lab6.html">Reproducible research</a></p>
-</li>
-<li><p>Exercises: <a href="/STATS32-2020/assets/lecture-6/pracice6.html">problems</a>, <a href="/STATS32-2020/assets/lecture-6/solutions6.html">solutions</a></p>
-</li>
-</ul>
-<p><strong>Extras</strong></p>
-<ul>
-<li><p>Data table: <a href="/STATS32-2020/assets/lecture-6/airbnb_nyc_2019.csv"><code>airbnb_nyc_2019.csv</code></a></p>
-</li>
-<li><p><a href="/STATS32-2020/assets/lecture-6/rmarkdown-cheatsheet.pdf">RMarkdown cheat sheet</a></p>
-</li>
-<li><p>An in-depth guide to R Markdown: <a href="https://bookdown.org/yihui/rmarkdown/">https://bookdown.org/yihui/rmarkdown/</a></p>
-</li>
-</ul>
-<h1 id="may_1_project_proposal_due"><a href="/STATS32-2020/lectures/index.html#may_1_project_proposal_due">May 1, <strong>Project proposal due</strong></a></h1>
-<h1 id="may_5_pastes_merges_and_joins_combining_tables_and_dataset_grammar"><a href="/STATS32-2020/lectures/index.html#may_5_pastes_merges_and_joins_combining_tables_and_dataset_grammar">May 5, <em>Pastes, merges and joins: combining tables and dataset grammar</em></a></h1>
-<p><strong>Materials</strong></p>
-<ul>
-<li><p>Lecture: <a href="/STATS32-2020/assets/lecture-7/pres7.html">slides</a> and <a href="https://web.stanford.edu/~damianp/recordings/recording7.mp4">recording</a></p>
-</li>
-<li><p>Lab: <a href="/STATS32-2020/assets/lecture-7/lab7.html">Data joining and maps</a> - this lab uses the following datsets:</p>
-<ul>
-<li><p><a href="/STATS32-2020/assets/lecture-7/2016_US_Presdential_Results_for_class.csv"><code>2016_US_Presdential_Results_for_class.csv</code></a></p>
-</li>
-<li><p><a href="/STATS32-2020/assets/lecture-7/county_map_fips.rds"><code>county_map_fips.rds</code></a></p>
-</li>
-</ul>
-</li>
-<li><p>Exercises: <a href="/STATS32-2020/assets/lecture-7/practice7.html">problems</a>, <a href="/STATS32-2020/assets/lecture-7/solutions7.html">solutions</a></p>
-</li>
-</ul>
-<p><strong>Extras</strong></p>
-<ul>
-<li><p>Data table: <a href="/STATS32-2020/assets/lecture-7/Drought_data.csv"><code>Drought_data.csv</code></a></p>
-</li>
-<li><p>Advanced mapping with R: <a href="/STATS32-2020/assets/lecture-7/Getting-started-with-ggmap.html">Getting started with <code>ggmap</code></a></p>
-</li>
-</ul>
-<h1 id="may_7_useful_tips_packages_and_faqs"><a href="/STATS32-2020/lectures/index.html#may_7_useful_tips_packages_and_faqs">May 7 , <em>Useful tips, packages and FAQs</em></a></h1>
-<p><strong>Materials</strong></p>
-<ul>
-<li><p>Lecture: <a href="/STATS32-2020/assets/lecture-8/pres8.html">slides</a> and <a href="https://web.stanford.edu/~damianp/recordings/recording8.mp4">recording</a></p>
-</li>
-</ul>
-<p><strong>Extras</strong></p>
-<ul>
-<li><p><a href="/STATS32-2020/assets/lecture-8/R_lubridate.pdf"><code>lubridate</code> cheat sheet</a></p>
-</li>
-</ul>
-<h1 id="may_16_final_project_due"><a href="/STATS32-2020/lectures/index.html#may_16_final_project_due">May 16, <strong>Final project due</strong></a></h1>
 <div class="page-foot">
   <div class="copyright">
-    &copy; Damian Pavlyshyn. Last modified: July 21, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+    &copy; Damian Pavlyshyn. Last modified: March 24, 2021. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
   </div>
 </div>
-
-</div>
-<!-- CONTENT ENDS HERE -->
+</div><!-- CONTENT ENDS HERE -->
       </div> <!-- end of id=main -->
   </div> <!-- end of id=layout -->
   <script src="/STATS32-2020/libs/pure/ui.min.js"></script>
-  
-      
-
-
-
   
   
 </body>

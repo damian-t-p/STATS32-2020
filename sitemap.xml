@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/project\index.html</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/node_modules\highlight.js\README\index.html</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/recordings\index.html</loc>
+    <lastmod>2021-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/resources\index.html</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/install-R\index.html</loc>
+    <lastmod>2021-03-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/distance\index.html</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/index.html</loc>
+    <lastmod>2021-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://damian-t-p.github.io/STATS32-2020/lectures\index.html</loc>
+    <lastmod>2021-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>
