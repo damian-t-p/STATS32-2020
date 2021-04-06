@@ -6,7 +6,7 @@ Due to slow upload speeds, the recordings should appear on this page the evening
 
 # 2021 Recordings
 
-Links to this quarter's recordings will appear here after the first lecture on April 6.
+* [April 6: Course introduction and getting started with R](https://web.stanford.edu/~damianp/recordings/recording-2021-1.mp4)
 
 # 2020 Recordings
 

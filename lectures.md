@@ -17,7 +17,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-1/presentation1.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording1.mp4)
+* Lecture: [slides](/assets/lecture-1/presentation1.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording1.mp4), [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-1.mp4)
 * Lab: [Using R for calculation](/assets/lecture-1/lab1.html)
 * Exercises: [problems](/assets/lecture-1/practice1.html), [solutions](/assets/lecture-1/solutions1.html)
 
@@ -27,22 +27,22 @@ However, live lectures and office hours are restricted to enrolled students and 
 * Data tables: [`weather.csv`](/assets/lecture-1/ny-taxi-data/weather.csv), [`rides.csv`](/assets/lecture-1/ny-taxi-data/rides.csv)
 
 
-<!-- # April 16, *R objects, variable types and data tables* -->
+# April 8, *R objects, variable types and data tables*
 
-<!-- **Before class** -->
+**Before class**
 
-<!-- * *Suggested reading:* [Summary statistics](/assets/lecture-2/Summary Statistics.pdf) -->
+* *Suggested reading:* [Summary statistics](/assets/lecture-2/Summary Statistics.pdf)
 
-<!-- **Materials** -->
+**Materials**
 
-<!-- * Lecture: [slides](/assets/lecture-2/pres2.html)  and [recording](https://web.stanford.edu/~damianp/recordings/recording2.mp4) -->
-<!-- * Lab: [Basic R objects](/assets/lecture-2/lab2.html) -->
-<!-- * Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html) -->
+* Lecture: [slides](/assets/lecture-2/pres2.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording2.mp4)
+* Lab: [Basic R objects](/assets/lecture-2/lab2.html)
+* Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html)
 
-<!-- **Extras** -->
+**Extras**
 
-<!-- * [RStudio shortcut reference](/assets/lecture-2/Valuable RStudio Shortcuts.pdf) -->
-<!-- * Data table: [`2016-presidential-election-county-results.csv`](/assets/lecture-2/2016-presidential-election-county-results.csv) -->
+* [RStudio shortcut reference](/assets/lecture-2/Valuable RStudio Shortcuts.pdf)
+* Data table: [`2016-presidential-election-county-results.csv`](/assets/lecture-2/2016-presidential-election-county-results.csv)
 
 <!-- # April 21 and 23, *Data visualisation with `ggplot`* -->
 
