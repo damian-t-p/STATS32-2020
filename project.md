@@ -72,6 +72,8 @@ Either reply to the existing discussion post or create your own.
 # What might the final project look like?
 Here are some examples of good student projects from previous runs of this class:
 
+* [Socioeconomic Disparity in the U.S](/assets/past-projects/caroline-huang-denise-lopez-soza.html), by Caroline Huang and Denise Lopez Sosa
+* [Movie Data](/assets/past-projects/ben-schwartz.html), by Ben Schwartz
 * [Development Assistance to Asia and the Asia-Pacific](/assets/past-projects/baroncatherine_LATE_135896_5133065_Baron-STATS-32-Project.html), by Catherine Baron
 * [US Education](/assets/past-projects/birknernicole_148476_5122624_STATS-32-Final-Project-Birkner-Jazo.html), by Nicole Birkner and Juan Jazo
 * [World Happiness](/assets/past-projects/jonesmaikasato_185180_5088240_Jones_Maika_STATS32_Final.html), by Maika Jones
