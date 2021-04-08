@@ -10,7 +10,7 @@ These recordings do not contain the breakout-room sections of each session.
 The 2020 recordings contain strictly more complete and in-depth presentations of each week's topic.
 
 * [April 6: Course introduction and getting started with R](https://web.stanford.edu/~damianp/recordings/recording-2021-1.mp4)
-* [April 8: Course introduction and getting started with R](https://web.stanford.edu/~damianp/recordings/recording-2021-2.mp4)
+* [April 8: R objects, variable types and data tables](https://web.stanford.edu/~damianp/recordings/recording-2021-2.mp4)
 
 # 2020 Recordings
 
