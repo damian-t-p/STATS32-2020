@@ -35,7 +35,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-2/pres2.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording2.mp4)
+* Lecture: [slides](/assets/lecture-2/pres2.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording2.mp4), [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-2.mp4)
 * Lab: [Basic R objects](/assets/lecture-2/lab2.html)
 * Exercises: [problems](/assets/lecture-2/practice2.html), [solutions](/assets/lecture-2/solutions2.html)
 
@@ -44,28 +44,28 @@ However, live lectures and office hours are restricted to enrolled students and 
 * [RStudio shortcut reference](/assets/lecture-2/Valuable RStudio Shortcuts.pdf)
 * Data table: [`2016-presidential-election-county-results.csv`](/assets/lecture-2/2016-presidential-election-county-results.csv)
 
-<!-- # April 21 and 23, *Data visualisation with `ggplot`* -->
+# April 13 and 25, *Data visualisation with `ggplot`*
 
-<!-- *Note: the material from these slides stretched over two lectures* -->
+*Note: the material from these slides stretched over two lectures*
 
-<!-- **Before class** -->
+**Before class**
 
-<!-- * *Required reading:* [R for Data Science, chapter 3: Data visualisation](https://r4ds.had.co.nz/data-visualisation.html) -->
+* *Required reading:* [R for Data Science, chapter 3: Data visualisation](https://r4ds.had.co.nz/data-visualisation.html)
 
-<!-- **Materials** -->
+**Materials**
 
-<!-- * Lecture: [slides](/assets/lecture-3/pres3.html), [April 21 recording](https://web.stanford.edu/~damianp/recordings/recording3.mp4) and [April 23 recording](https://web.stanford.edu/~damianp/recordings/recording4.mp4) -->
-<!-- * Lab: [Data visualization](/assets/lecture-3/lab3.html) -->
-<!-- * Exercises: [problems](/assets/lecture-3/practice3.html), [solutions](/assets/lecture-3/solutions3.html) -->
+* Lecture: [slides](/assets/lecture-3/pres3.html), [April 21, 2020 recording](https://web.stanford.edu/~damianp/recordings/recording3.mp4) and [April 23, 2021 recording](https://web.stanford.edu/~damianp/recordings/recording4.mp4)
+* Lab: [Data visualization](/assets/lecture-3/lab3.html)
+* Exercises: [problems](/assets/lecture-3/practice3.html), [solutions](/assets/lecture-3/solutions3.html)
 
-<!-- **Extras** -->
+**Extras**
 
-<!-- * [ggplot reference sheet](/assets/lecture-3/ggplot2-cheatsheet.pdf) -->
-<!-- * [Code for generating `efficiency`](/assets/lecture-3/efficiency.html) -->
-<!-- * Data tables: [`worldbank_data_tidy.csv`](/assets/lecture-3/data/worldbank_data_tidy.csv) -->
-<!--     + Data sourced directly from world bank website: [`worldbank_data_raw.csv`](/assets/lecture-3/data/worldbank_data_raw.csv) -->
-<!--     + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R) -->
-<!--     + Information about the raw data table:  [`worldbank_metadata.csv`](/assets/lecture-3/data/worldbank_metadata.csv) -->
+* [ggplot reference sheet](/assets/lecture-3/ggplot2-cheatsheet.pdf)
+* [Code for generating `efficiency`](/assets/lecture-3/efficiency.html)
+* Data tables: [`worldbank_data_tidy.csv`](/assets/lecture-3/data/worldbank_data_tidy.csv)
+    + Data sourced directly from world bank website: [`worldbank_data_raw.csv`](/assets/lecture-3/data/worldbank_data_raw.csv)
+    + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R)
+    + Information about the raw data table:  [`worldbank_metadata.csv`](/assets/lecture-3/data/worldbank_metadata.csv)
 
 <!-- # April 28, *`dplyr`: data manipulation and functions* -->
 
