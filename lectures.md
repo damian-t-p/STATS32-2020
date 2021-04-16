@@ -52,7 +52,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-3/pres3.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording3.mp4)
+* Lecture: [slides](/assets/lecture-3/pres3.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording3.mp4), [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-3.mp4)
 * Lab: [Data visualization](/assets/lecture-3/lab3.html)
 * Exercises: [problems](/assets/lecture-3/practice3.html), [solutions](/assets/lecture-3/solutions3.html)
 
@@ -65,33 +65,33 @@ However, live lectures and office hours are restricted to enrolled students and 
     + Script for tidying data table: [`worldbank_ETL.R`](/assets/lecture-3/data/worldbank_ETL.R)
     + Information about the raw data table:  [`worldbank_metadata.csv`](/assets/lecture-3/data/worldbank_metadata.csv)
 
-# April 25, *Data visualisation with `ggplot`, part 2*
+# April 15, *Data visualisation with `ggplot`, part 2*
 
 *Note: Extras and "before class" from the previous lecture are also relevant to this one*
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-3/pres3.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording4.mp4)
+* Lecture: [slides](/assets/lecture-3/pres3.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording4.mp4), [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-4.mp4)
 * Lab: [Layering in `ggplot`](/assets/lecture-3/lab3-2.html)
 
 
-<!-- # April 28, *`dplyr`: data manipulation and functions* -->
+# April 20, *`dplyr`: data manipulation and functions*
 
-<!-- **Before class** -->
+**Before class**
 
-<!-- * *Required reading:* [R for Data Science, chapter 4: Data transformation](https://r4ds.had.co.nz/transform.html) -->
+* *Required reading:* [R for Data Science, chapter 4: Data transformation](https://r4ds.had.co.nz/transform.html)
 
-<!-- **Materials** -->
+**Materials**
 
-<!-- * Lecture: [slides](/assets/lecture-4/pres4.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording5.mp4) -->
+* Lecture: [slides](/assets/lecture-4/pres4.html) and [2020 recording](https://web.stanford.edu/~damianp/recordings/recording5.mp4)
 <!-- * Lab: [Data transformation](/assets/lecture-4/lab4.html) -->
-<!-- * Exercises: [problems](/assets/lecture-4/practice4.html), [solutions](/assets/lecture-4/solutions4.html) -->
+* Exercises: [problems](/assets/lecture-4/practice4.html), [solutions](/assets/lecture-4/solutions4.html)
 
-<!-- **Extras** -->
+**Extras**
 
-<!-- * [Data Wrangling cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (Note: this sheet uses `gather` and `spread`, which are out-dated. We'll, talk about this sort of think in Lecture 7) -->
+* [Data Wrangling cheat sheet](https://rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) (Note: this sheet uses `gather` and `spread`, which are out-dated. We'll, talk about this sort of think in Lecture 7)
 
-<!-- # April 30, *Rmarkdown documents, presentations and workflow* -->
+# April 22, *Rmarkdown documents, presentations and workflow*
 
 <!-- **Before class** -->
 
@@ -109,9 +109,9 @@ However, live lectures and office hours are restricted to enrolled students and 
 <!-- * [RMarkdown cheat sheet](/assets/lecture-6/rmarkdown-cheatsheet.pdf) -->
 <!-- * An in-depth guide to R Markdown: <https://bookdown.org/yihui/rmarkdown/> -->
 
-<!-- # May 1, **Project proposal due** -->
+# April 23, **Project proposal due**
 
-<!-- # May 5, *Pastes, merges and joins: combining tables and dataset grammar* -->
+# April 27, *Pastes, merges and joins: combining tables and dataset grammar*
 
 <!-- **Materials** -->
 
@@ -126,7 +126,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 <!-- * Data table: [`Drought_data.csv`](/assets/lecture-7/Drought_data.csv) -->
 <!-- * Advanced mapping with R: [Getting started with `ggmap`](/assets/lecture-7/Getting-started-with-ggmap.html) -->
 
-<!-- # May 7 , *Useful tips, packages and FAQs* -->
+# April 29, *Useful tips, packages and FAQs*
 
 <!-- **Materials** -->
 
@@ -136,4 +136,4 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 <!-- * [`lubridate` cheat sheet](/assets/lecture-8/R_lubridate.pdf) -->
 
-<!-- # May 16, **Final project due** -->
+# May 7, **Final project due**
