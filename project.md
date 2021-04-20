@@ -17,7 +17,7 @@ Here are the project minimum requirements:
 * Use a dataset that we have not used in class. If using an external dataset, provide the data file and/or a link to it.
 * An "Introduction" section describing the problem and the datasets to be used.
 * A "Data analysis" section where you have code. Code should have accompanying text that describes what the code is doing and interprets the results.
-* At least 3 data visualizations (not all of the same type).
+* At least 3 data visualizations per person on a team - these must be of at least two different types for people working alone and of at least three different types for teams.
 * A "Conclusion" section to summarize the results of the analysis, as well as any deviations from the project proposal.
 
 ## Rubric
