@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Introduction"
 author: "Damian Pavlyshyn"
-date: "4/30/2020"
+date: "4/22/2020"
 output: html_document
 ---
 
@@ -78,7 +78,7 @@ We can make text *italic*, **bold**, ^superscripted^ or in a `typewriter` font.
 We can also include hyperlinks <http://web.stanford.edu/class/stats32/> directly, as well as [named links](http://web.stanford.edu/class/stats32/).
 
 External images are included using a similar syntax:
-![](D:/Users/Damian/stats32/function.png)
+![](http://web.stanford.edu/class/stats32/extras/function.png)
 
 ### Lists
 

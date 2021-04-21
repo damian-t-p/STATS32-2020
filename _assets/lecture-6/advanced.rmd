@@ -1,7 +1,7 @@
 ---
 title: "R Markdown Advanced Example"
 author: "Damian Pavlyshyn"
-date: "4/30/2020"
+date: "4/22/2020"
 output:
   html_document:
     toc: true
@@ -9,7 +9,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 knitr::opts_knit$set(root.dir = "D:/Users/Damian/stats32")
 ```
 
@@ -21,7 +21,7 @@ We can do this using "chunk options" that we include in the `{r <name> <options>
 `echo=FALSE` will suppress code from the output, but will display the output.
 This is useful, for example, when you have a complicated plotting specification that isn't relevant to the analysis itself.
 However, **please do not use this option in your final project!** I want to see all your code!
-```{r echo=FALSE}
+```{r name, echo=FALSE}
 1 + 1
 ```
 
@@ -38,7 +38,7 @@ v
 
 Often when you run R code, it prints a bunch of information in addition to the actual output.
 By default, this is included in the output document, but it can be suppressed using `message=FALSE`.
-```{r message=FALSE}
+```{r}
 library(tidyverse)
 scores <- read_csv("example.csv")
 scores
