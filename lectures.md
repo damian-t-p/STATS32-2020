@@ -115,16 +115,16 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 <!-- **Materials** -->
 
-<!-- * Lecture: [slides](/assets/lecture-7/pres7.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording7.mp4) -->
+* Lecture: [slides](/assets/lecture-7/pres7.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording7.mp4)
 <!-- * Lab: [Data joining and maps](/assets/lecture-7/lab7.html) - this lab uses the following datsets: -->
 <!--   + [`2016_US_Presdential_Results_for_class.csv`](/assets/lecture-7/2016_US_Presdential_Results_for_class.csv) -->
 <!--   + [`county_map_fips.rds`](/assets/lecture-7/county_map_fips.rds) -->
-<!-- * Exercises: [problems](/assets/lecture-7/practice7.html), [solutions](/assets/lecture-7/solutions7.html) -->
+* Exercises: [problems](/assets/lecture-7/practice7.html), [solutions](/assets/lecture-7/solutions7.html)
 
-<!-- **Extras** -->
+**Extras**
 
-<!-- * Data table: [`Drought_data.csv`](/assets/lecture-7/Drought_data.csv) -->
-<!-- * Advanced mapping with R: [Getting started with `ggmap`](/assets/lecture-7/Getting-started-with-ggmap.html) -->
+* Data table: [`Drought_data.csv`](/assets/lecture-7/Drought_data.csv)
+* Advanced mapping with R: [Getting started with `ggmap`](/assets/lecture-7/Getting-started-with-ggmap.html)
 
 # April 29, *Useful tips, packages and FAQs*
 
