@@ -13,6 +13,7 @@ The 2020 recordings contain strictly more complete and in-depth presentations of
 * [April 8: R objects, variable types and data tables](https://web.stanford.edu/~damianp/recordings/recording-2021-2.mp4)
 * [April 13: Data visualisation with `ggplot` part 1](https://web.stanford.edu/~damianp/recordings/recording-2021-3.mp4)
 * [April 15: Data visualisation with `ggplot` part 2](https://web.stanford.edu/~damianp/recordings/recording-2021-4.mp4)
+* [April 20: Data manipulation with `dplyr`](https://web.stanford.edu/~damianp/recordings/recording-2021-5.mp4)
 
 # 2020 Recordings
 

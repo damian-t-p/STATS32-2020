@@ -83,7 +83,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-4/pres4.html) and [2020 recording](https://web.stanford.edu/~damianp/recordings/recording5.mp4)
+* Lecture: [slides](/assets/lecture-4/pres4.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording5.mp4), [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-5.mp4)
 * Lab: [Data transformation](/assets/lecture-4/lab4.html)
 * Exercises: [problems](/assets/lecture-4/practice4.html), [solutions](/assets/lecture-4/solutions4.html)
 
@@ -93,21 +93,21 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 22, *Rmarkdown documents, presentations and workflow*
 
-<!-- **Before class** -->
+**Before class**
 
-<!-- * Instead of slides, this lecture will be conducted using two R Markdown documents, so download them and open them in RStudio before the lecture. -->
+* Instead of slides, this lecture will be conducted using two R Markdown documents, so download them and open them in RStudio before the lecture.
 
-<!-- **Materials** -->
+**Materials**
 
-<!-- * Lecture: [introductory](/assets/lecture-6/introduction.rmd) and [advanced](/assets/lecture-6/advanced.rmd) R Markdown documents, and [recording](https://web.stanford.edu/~damianp/recordings/recording6.mp4) -->
+* Lecture: [introductory](/assets/lecture-6/introduction.rmd) and [advanced](/assets/lecture-6/advanced.rmd) R Markdown documents, and [2020 recording](https://web.stanford.edu/~damianp/recordings/recording6.mp4)
 <!-- * Lab: [Reproducible research](/assets/lecture-6/lab6.html) -->
-<!-- * Exercises: [problems](/assets/lecture-6/pracice6.html), [solutions](/assets/lecture-6/solutions6.html) -->
+* Exercises: [problems](/assets/lecture-6/pracice6.html), [solutions](/assets/lecture-6/solutions6.html)
 
-<!-- **Extras** -->
+**Extras**
 
-<!-- * Data table: [`airbnb_nyc_2019.csv`](/assets/lecture-6/airbnb_nyc_2019.csv) -->
-<!-- * [RMarkdown cheat sheet](/assets/lecture-6/rmarkdown-cheatsheet.pdf) -->
-<!-- * An in-depth guide to R Markdown: <https://bookdown.org/yihui/rmarkdown/> -->
+* Data table: [`airbnb_nyc_2019.csv`](/assets/lecture-6/airbnb_nyc_2019.csv)
+* [RMarkdown cheat sheet](/assets/lecture-6/rmarkdown-cheatsheet.pdf)
+* An in-depth guide to R Markdown: <https://bookdown.org/yihui/rmarkdown/>
 
 # April 23, **Project proposal due**
 
