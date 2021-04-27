@@ -115,7 +115,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 <!-- **Materials** -->
 
-* Lecture: [slides](/assets/lecture-7/pres7.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording7.mp4)
+* Lecture: [slides](/assets/lecture-7/pres7.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording7.mp4), [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-7.mp4)
 * Lab: [Data joining and maps](/assets/lecture-7/lab7.html) - this lab uses the following datsets:
   + [`2016_US_Presdential_Results_for_class.csv`](/assets/lecture-7/2016_US_Presdential_Results_for_class.csv)
   + [`county_map_fips.rds`](/assets/lecture-7/county_map_fips.rds)
@@ -128,12 +128,12 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 # April 29, *Useful tips, packages and FAQs*
 
-<!-- **Materials** -->
+**Materials**
 
-<!-- * Lecture: [slides](/assets/lecture-8/pres8.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording8.mp4) -->
+* Lecture: [slides](/assets/lecture-8/pres8.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording8.mp4)
 
-<!-- **Extras** -->
+**Extras**
 
-<!-- * [`lubridate` cheat sheet](/assets/lecture-8/R_lubridate.pdf) -->
+* [`lubridate` cheat sheet](/assets/lecture-8/R_lubridate.pdf)
 
 # May 7, **Final project due**
