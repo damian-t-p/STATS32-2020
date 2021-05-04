@@ -16,6 +16,7 @@ The 2020 recordings contain strictly more complete and in-depth presentations of
 * [April 20: Data manipulation with `dplyr`](https://web.stanford.edu/~damianp/recordings/recording-2021-5.mp4)
 * [April 22: Introduction to R Markdown](https://web.stanford.edu/~damianp/recordings/recording-2021-6.mp4)
 * [April 27: Maps and merging data](https://web.stanford.edu/~damianp/recordings/recording-2021-7.mp4)
+* [April 29: FAQs and useful libraries](https://web.stanford.edu/~damianp/recordings/recording-2021-8.mp4)
 
 # 2020 Recordings
 

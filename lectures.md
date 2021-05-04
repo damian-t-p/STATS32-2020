@@ -130,7 +130,7 @@ However, live lectures and office hours are restricted to enrolled students and 
 
 **Materials**
 
-* Lecture: [slides](/assets/lecture-8/pres8.html) and [recording](https://web.stanford.edu/~damianp/recordings/recording8.mp4)
+* Lecture: [slides](/assets/lecture-8/pres8.html), [2020 recording](https://web.stanford.edu/~damianp/recordings/recording8.mp4),  [2021 recording](https://web.stanford.edu/~damianp/recordings/recording-2021-8.mp4)
 * Lab: [Data parsing and stat graphics](/assets/lecture-8/lab8.html) - this lab uses the following datset:
   + [`cricket_data.csv`](/assets/lecture-8/cricket_data.csv)
 
